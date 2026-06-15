@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Martin Growth | Partner operacyjny wzrostu dla firm</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#e5e2de",
+                        "on-primary-container": "#858481",
+                        "outline-variant": "#c8c7bf",
+                        "tertiary": "#000000",
+                        "surface-variant": "#e2e3e1",
+                        "primary": "#000000",
+                        "secondary-container": "#c8ebd3",
+                        "secondary-fixed": "#c8ebd3",
+                        "on-secondary-fixed-variant": "#2f4d3c",
+                        "surface-bright": "#f9f9f7",
+                        "inverse-primary": "#c9c6c3",
+                        "surface-tint": "#5f5e5c",
+                        "secondary": "#466553",
+                        "tertiary-fixed-dim": "#ecc155",
+                        "surface-dim": "#dadad8",
+                        "secondary-fixed-dim": "#adcfb8",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#474741",
+                        "outline": "#777771",
+                        "inverse-surface": "#2f3130",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#a37f15",
+                        "on-tertiary-fixed": "#251a00",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#e8e8e6",
+                        "on-secondary-container": "#4c6b59",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1a1c1b",
+                        "tertiary-container": "#251a00",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#022112",
+                        "surface-container-highest": "#e2e3e1",
+                        "primary-fixed-dim": "#c9c6c3",
+                        "on-background": "#1a1c1b",
+                        "surface": "#f9f9f7",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-primary-fixed-variant": "#474744",
+                        "tertiary-fixed": "#ffdf97",
+                        "background": "#f9f9f7",
+                        "on-tertiary-fixed-variant": "#5a4400",
+                        "surface-container-low": "#f4f4f2",
+                        "surface-container": "#eeeeec",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#1c1c1a",
+                        "primary-container": "#1c1c1a",
+                        "brand-forest": "#1C3A2A",
+                        "brand-gold": "#B8922A",
+                        "brand-warm-white": "#FAFAF8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0",
+                        "lg": "0",
+                        "xl": "0",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-mobile": "24px",
+                        "stack-xl": "96px",
+                        "gutter": "32px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "margin-desktop": "80px",
+                        "stack-sm": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .hairline { height: 0.5px; background-color: #B8922A; border: none; }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .thin-border { border-width: 0.5px; }
+    </style>
+</head>
+<body class="bg-brand-warm-white text-on-surface font-body-md antialiased overflow-x-hidden">
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-brand-warm-white/95 backdrop-blur-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-4 group">
+<svg class="h-10 w-10 text-primary group-hover:text-brand-gold transition-colors duration-300" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="transparent" />
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Playfair Display, serif" font-size="18" font-weight="600" fill="currentColor">MG</text>
+</svg>
+<span class="font-headline-md text-headline-md font-bold text-primary tracking-tight group-hover:text-brand-gold transition-colors duration-300">Martin Growth</span>
+</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 border-b-2 border-transparent pb-1" href="#o-nas">O NAS</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 border-b-2 border-transparent pb-1" href="#jak-dzialamy">JAK DZIAŁAMY</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 border-b-2 border-transparent pb-1" href="#wspolpraca">WSPÓŁPRACA</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 border-b-2 border-transparent pb-1" href="#kontakt">KONTAKT</a>
+</div>
+<button class="bg-brand-forest text-on-primary px-8 py-3 font-label-caps text-label-caps hover:bg-opacity-90 transition-all">
+                UMÓW ROZMOWĘ
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale opacity-20" data-alt="A high-contrast black and white architectural photograph capturing the sharp, structural lines of a modern skyscraper's facade against a clear sky. The lighting is dramatic, emphasizing textures and the precise engineering of the building. The image reflects a sense of permanence, structural integrity, and professional sophistication, aligning with a premium investment firm aesthetic. Deep shadows and bright highlights create a powerful editorial look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCrMy0r78V9WbPq9hAt5p8x70YCOENROIfCCiVKtUga3fS-xwBkkYLBEjhXfxPItvdxYTBNfxjus-ckQC0NzCKI9deQl2M4isVCWxmh6jt-PuToPtdQ8RVvgSx1vTxezoyjpUtNccM8-XPXK3Euhl_WEzGJV-tPJ7Dh7EQBMYAogZxPRwtK8358zxdxpq3oWL9eMBGSLgvGQEN-ZtPOb8bthcJP6sJJ9tchuToxGX5Z1r7iWEYqnZs94sBRBvrcefefPSknWZz2al5"/>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto grid grid-cols-12 gap-gutter items-center">
+<div class="col-span-12 lg:col-span-8 fade-in">
+<h1 class="font-headline-lg text-headline-lg text-primary mb-stack-md leading-tight">
+                    Nie jesteśmy agencją. Jesteśmy partnerem który zarabia gdy Ty zarabiasz.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-2xl">
+                    Wchodzimy do firmy, diagnozujemy gdzie tracisz klientów i pieniądze, i wdrażamy zmiany — bez pośredników. Skalujemy Twoje operacje poprzez twarde dane i sprawdzoną infrastrukturę.
+                </p>
+<div class="flex gap-stack-md">
+<button class="bg-brand-forest text-on-primary px-10 py-4 font-label-caps text-label-caps hover:bg-opacity-90 transition-all">
+                        ZGŁOŚ FIRMĘ DO ANALIZY
+                    </button>
+<button class="border border-primary text-primary px-10 py-4 font-label-caps text-label-caps hover:bg-primary hover:text-on-primary transition-all">
+                        ZOBACZ JAK DZIAŁAMY
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Problem (Diagnoza) -->
+<section class="py-stack-xl px-margin-desktop max-w-container-max mx-auto fade-in" id="o-nas">
+<div class="mb-stack-lg">
+<span class="font-label-caps text-label-caps text-brand-gold">DIAGNOZA</span>
+<hr class="hairline w-16 mt-4"/>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-start">
+<h2 class="font-headline-lg text-headline-lg text-primary">
+                Większość dobrych firm nie ma problemu z jakością. Ma problem z systemem.
+            </h2>
+<div class="grid grid-cols-1 gap-4">
+<div class="py-4 border-b border-outline-variant/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold">error_outline</span>
+<p class="font-body-md">Przepalanie budżetów na kampanie, które nie konwertują w realną sprzedaż.</p>
+</div>
+<div class="py-4 border-b border-outline-variant/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold">error_outline</span>
+<p class="font-body-md">Brak przewidywalności w lejku sprzedażowym i chaos operacyjny.</p>
+</div>
+<div class="py-4 border-b border-outline-variant/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold">error_outline</span>
+<p class="font-body-md">Zależność od kluczowych pracowników zamiast od procesów.</p>
+</div>
+<div class="py-4 border-b border-outline-variant/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold">error_outline</span>
+<p class="font-body-md">Niewykorzystany potencjał obecnej bazy klientów i wysoki churn.</p>
+</div>
+<div class="py-4 border-b border-outline-variant/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold">error_outline</span>
+<p class="font-body-md">Brak czytelnych wskaźników KPI (wszystko opiera się na "intuicji").</p>
+</div>
+<div class="py-4 border-b border-outline-variant/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold">error_outline</span>
+<p class="font-body-md">Zatrzymanie wzrostu przy pewnej skali przychodowej.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution (Rozwiązanie) -->
+<section class="py-stack-xl bg-surface-container-low" id="jak-dzialamy">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="pt-8 border-t-[0.5px] border-brand-gold fade-in">
+<span class="font-label-caps text-label-caps text-brand-gold mb-4 block">01</span>
+<h3 class="font-headline-md text-headline-md mb-stack-md">Growth Strategy</h3>
+<p class="font-body-md text-on-surface-variant">Tworzymy ramy dla zrównoważonego wzrostu. Analizujemy rynek, konkurencję i Twój produkt, by znaleźć "leverage points" – miejsca, gdzie najmniejsza zmiana da największy zysk.</p>
+</div>
+<div class="pt-8 border-t-[0.5px] border-brand-gold fade-in" style="transition-delay: 100ms;">
+<span class="font-label-caps text-label-caps text-brand-gold mb-4 block">02</span>
+<h3 class="font-headline-md text-headline-md mb-stack-md">Marketing Infrastructure</h3>
+<p class="font-body-md text-on-surface-variant">Nie tylko planujemy. Budujemy silniki marketingowe, systemy CRM, automatyzacje i analitykę, która pozwala widzieć zwrot z każdej zainwestowanej złotówki.</p>
+</div>
+<div class="pt-8 border-t-[0.5px] border-brand-gold fade-in" style="transition-delay: 200ms;">
+<span class="font-label-caps text-label-caps text-brand-gold mb-4 block">03</span>
+<h3 class="font-headline-md text-headline-md mb-stack-md">Operational Partnership</h3>
+<p class="font-body-md text-on-surface-variant">Działamy jako Twój zewnętrzny dyrektor operacyjny. Dzielimy się ryzykiem i zyskiem, biorąc pełną odpowiedzialność za egzekucję ustalonej strategii wzrostu.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- For Whom (Tags) -->
+<section class="py-stack-xl px-margin-desktop max-w-container-max mx-auto text-center fade-in">
+<span class="font-label-caps text-label-caps mb-stack-md block">SPECJALIZACJA BRANŻOWA</span>
+<div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+<span class="px-6 py-3 border border-outline-variant font-label-caps text-[10px] tracking-widest">GABINETY MEDYCYNY ESTETYCZNEJ</span>
+<span class="px-6 py-3 border border-outline-variant font-label-caps text-[10px] tracking-widest">SZKOŁY JĘZYKOWE</span>
+<span class="px-6 py-3 border border-outline-variant font-label-caps text-[10px] tracking-widest">FIRMY USŁUGOWE B2B</span>
+<span class="px-6 py-3 border border-outline-variant font-label-caps text-[10px] tracking-widest">E-COMMERCE HIGH-TICKET</span>
+<span class="px-6 py-3 border border-outline-variant font-label-caps text-[10px] tracking-widest">PRODUCENCI MEBLI PREMIUM</span>
+<span class="px-6 py-3 border border-outline-variant font-label-caps text-[10px] tracking-widest">BUTIKOWE BIURA NIERUCHOMOŚCI</span>
+</div>
+</section>
+<!-- Cooperation Models (Table) -->
+<section class="py-stack-xl px-margin-desktop max-w-container-max mx-auto fade-in" id="wspolpraca">
+<h2 class="font-headline-lg text-headline-lg mb-stack-lg text-center">Modele Współpracy</h2>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-brand-gold">
+<th class="py-6 font-label-caps text-label-caps">PROGRAM</th>
+<th class="py-6 font-label-caps text-label-caps">ZAKRES</th>
+<th class="py-6 font-label-caps text-label-caps">CEL</th>
+</tr>
+</thead>
+<tbody class="font-body-md">
+<tr class="border-b border-outline-variant/30 hover:bg-brand-forest/5 transition-colors">
+<td class="py-8 font-semibold">Growth Audit</td>
+<td class="py-8">Kompletna analiza lejka, procesów i finansów firmy. Raport z gotowymi rozwiązaniami.</td>
+<td class="py-8 italic">Zidentyfikowanie "wąskich gardeł" w 14 dni.</td>
+</tr>
+<tr class="border-b border-outline-variant/30 hover:bg-brand-forest/5 transition-colors">
+<td class="py-8 font-semibold">Growth Partner</td>
+<td class="py-8">Bieżące doradztwo strategiczne i nadzór nad wdrażaniem procesów marketingowych.</td>
+<td class="py-8 italic">Stabilny wzrost przychodów o min. 30% r/r.</td>
+</tr>
+<tr class="border-b border-outline-variant/30 hover:bg-brand-forest/5 transition-colors">
+<td class="py-8 font-semibold">Equity / Revenue Share</td>
+<td class="py-8">Pełne zaangażowanie operacyjne. Budujemy system za własne środki w zamian za udziały.</td>
+<td class="py-8 italic">Zdominowanie niszy rynkowej.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Process -->
+<section class="py-stack-xl bg-primary text-on-primary">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<span class="font-label-caps text-label-caps text-secondary-fixed mb-stack-lg block text-center">NASZA ŚCIEŻKA</span>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-stack-md relative">
+<!-- Connectors for desktop -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-[1px] bg-outline opacity-20 z-0"></div>
+<div class="relative z-10 text-center flex flex-col items-center">
+<div class="w-24 h-24 bg-brand-forest border border-outline flex items-center justify-center mb-6">
+<span class="font-headline-md">1</span>
+</div>
+<h4 class="font-label-caps text-[10px] mb-2">ANALIZA</h4>
+<p class="text-on-primary-container text-sm">Głęboki audyt danych i procesów.</p>
+</div>
+<div class="relative z-10 text-center flex flex-col items-center">
+<div class="w-24 h-24 bg-brand-forest border border-outline flex items-center justify-center mb-6">
+<span class="font-headline-md">2</span>
+</div>
+<h4 class="font-label-caps text-[10px] mb-2">DIAGNOZA</h4>
+<p class="text-on-primary-container text-sm">Wskazanie miejsc utraty kapitału.</p>
+</div>
+<div class="relative z-10 text-center flex flex-col items-center">
+<div class="w-24 h-24 bg-brand-forest border border-outline flex items-center justify-center mb-6">
+<span class="font-headline-md">3</span>
+</div>
+<h4 class="font-label-caps text-[10px] mb-2">PLAN</h4>
+<p class="text-on-primary-container text-sm">Strategia konkretnych działań.</p>
+</div>
+<div class="relative z-10 text-center flex flex-col items-center">
+<div class="w-24 h-24 bg-brand-forest border border-outline flex items-center justify-center mb-6">
+<span class="font-headline-md">4</span>
+</div>
+<h4 class="font-label-caps text-[10px] mb-2">WDROŻENIE</h4>
+<p class="text-on-primary-container text-sm">Budowa infrastruktury wzrostu.</p>
+</div>
+<div class="relative z-10 text-center flex flex-col items-center">
+<div class="w-24 h-24 bg-brand-forest border border-outline flex items-center justify-center mb-6">
+<span class="font-headline-md">5</span>
+</div>
+<h4 class="font-label-caps text-[10px] mb-2">SKALOWANIE</h4>
+<p class="text-on-primary-container text-sm">Powtarzalne zwiększanie wolumenu.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder -->
+<section class="py-stack-xl px-margin-desktop max-w-container-max mx-auto fade-in">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5">
+<img class="w-full aspect-[4/5] object-cover grayscale" data-alt="A sophisticated black and white portrait of a professional man, Jacob Martin, in a dark tailored suit. He has a serious, direct gaze that conveys authority and intellectual rigor. The lighting is low-key, characteristic of high-end editorial portraits, with deep shadows and sharp highlights. The setting is a minimalist, slightly out-of-focus executive office with subtle textures of stone and dark wood. The overall mood is one of discretion and long-term operational excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJTnqSs5SzvLAL2QKNbUviPOMYudDJbe5zoUEYtGR7bTybW5cWcxI0uthSOLOhhrr0Nt7Yanscp0zeys9setlxHThBe5vYdbx1cpZw_kD6Dc7hj8J5xdBBI8SbfGW-3P1SySLZugqhGV-xk94-SBkRuhbNDcbwbo99U8N8ile1ssmEN0M6vw0jwvtfLZEnIgB8pTZSQUgQF1nmMj9GxvkddG7v_KZ0pOWZ9j3ICzX-TPN3aX3GSvFqgYOdnarmsvXw9H7Qr53BiKwc"/>
+</div>
+<div class="lg:col-span-7 lg:pl-stack-lg">
+<span class="font-label-caps text-label-caps text-brand-gold mb-stack-md block">FOUNDER</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">Jacob Martin</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 italic">
+                    "W biznesie nie wierzę w 'kreatywne pomysły', które nie mają odzwierciedlenia w arkuszu kalkulacyjnym. Sukces firmy to suma nudnych, doskonale zaprojektowanych procesów i bezlitosnej egzekucji."
+                </p>
+<p class="font-body-md text-on-surface-variant mb-stack-md">
+                    Z ponad dekadą doświadczenia w restrukturyzacji operacyjnej i marketingu efektywnościowym, Jacob założył Martin Growth z jedną misją: eliminacja marnotrawstwa w firmach z sektora usług premium. Specjalizuje się w budowaniu systemów, które działają niezależnie od właściciela.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">dine_in</span>
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="py-stack-xl bg-[#1A1A18] text-white" id="kontakt">
+<div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-stack-md">Masz firmę z potencjałem? Porozmawiajmy.</h2>
+<p class="font-body-lg text-on-primary-container mb-stack-lg">
+                    Analizujemy zgłoszenia w ciągu 48 godzin. Jeśli widzimy przestrzeń do współpracy, zaproponujemy termin darmowej konsultacji strategicznej.
+                </p>
+<div class="space-y-4">
+<p class="font-label-caps text-label-caps flex items-center gap-4">
+<span class="material-symbols-outlined text-brand-gold">phone_iphone</span> +48 700 000 000
+                    </p>
+<p class="font-label-caps text-label-caps flex items-center gap-4">
+<span class="material-symbols-outlined text-brand-gold">alternate_email</span> office@martingrowth.pl
+                    </p>
+<p class="font-label-caps text-label-caps flex items-center gap-4">
+<span class="material-symbols-outlined text-brand-gold">location_on</span> Warszawa / Londyn
+                    </p>
+</div>
+</div>
+<form class="space-y-stack-md">
+<div class="border-b border-outline-variant/30 py-2">
+<label class="font-label-caps text-[10px] text-on-primary-container block mb-1">IMIĘ I NAZWISKO</label>
+<input class="w-full bg-transparent border-none text-white focus:ring-0 px-0 placeholder-outline" placeholder="Jan Kowalski" type="text"/>
+</div>
+<div class="border-b border-outline-variant/30 py-2">
+<label class="font-label-caps text-[10px] text-on-primary-container block mb-1">ADRES E-MAIL</label>
+<input class="w-full bg-transparent border-none text-white focus:ring-0 px-0 placeholder-outline" placeholder="jan@firma.pl" type="email"/>
+</div>
+<div class="border-b border-outline-variant/30 py-2">
+<label class="font-label-caps text-[10px] text-on-primary-container block mb-1">MIESIĘCZNY PRZYCHÓD (PLN)</label>
+<select class="w-full bg-transparent border-none text-white focus:ring-0 px-0">
+<option class="bg-[#1A1A18]">Poniżej 50k</option>
+<option class="bg-[#1A1A18]">50k - 200k</option>
+<option class="bg-[#1A1A18]">200k - 1mln</option>
+<option class="bg-[#1A1A18]">Powyżej 1mln</option>
+</select>
+</div>
+<div class="border-b border-outline-variant/30 py-2">
+<label class="font-label-caps text-[10px] text-on-primary-container block mb-1">WIADOMOŚĆ / WYZWANIE</label>
+<textarea class="w-full bg-transparent border-none text-white focus:ring-0 px-0 h-24 resize-none" placeholder="Opisz krótko swój problem..."></textarea>
+</div>
+<button class="w-full py-4 bg-brand-forest text-on-primary font-label-caps text-label-caps hover:bg-opacity-80 transition-all mt-stack-md">
+                    WYŚLIJ ZAPYTANIE
+                </button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-brand-warm-white py-stack-lg border-t-[0.5px] border-outline-variant/30">
+<div class="px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-gutter">
+<div>
+<div class="flex items-center gap-4 mb-4">
+<svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="transparent" />
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Playfair Display, serif" font-size="18" font-weight="600" fill="currentColor">MG</text>
+</svg>
+<span class="font-headline-md text-headline-md text-primary">Martin Growth</span>
+</div>
+<p class="text-on-surface-variant font-body-md max-w-sm mb-4">Partner operacyjny wzrostu dla firm.</p>
+</div>
+<div class="grid grid-cols-2 gap-stack-lg md:gap-32">
+<div class="space-y-2">
+<h5 class="font-label-caps text-label-caps mb-4">Firma</h5>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="#o-nas">O nas</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="#jak-dzialamy">Jak działamy</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="#wspolpraca">Współpraca</a>
+</div>
+<div class="space-y-2">
+<h5 class="font-label-caps text-label-caps mb-4">SOCIAL</h5>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="#">LinkedIn</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="#">X / Twitter</a>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto mt-stack-lg pt-stack-md border-t border-outline-variant/10">
+<p class="font-label-caps text-[10px] text-on-surface-variant">© 2025 Martin Growth. Wszystkie prawa zastrzeżone.</p>
+</div>
+</footer>
+<script>
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body></html>

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Martin Growth | Partner operacyjny wzrostu dla firm</title>
+<meta name="description" content="Martin Growth to butikowy partner operacyjny wzrostu dla firm usługowych premium. Pomagamy skalować przychody, eliminować marnotrawstwo i budować powtarzalne systemy marketingowo-sprzedażowe." />
+<meta name="keywords" content="Martin Growth, partner operacyjny wzrostu, doradztwo operacyjne, marketing efektywnościowy, skalowanie firm premium, restrukturyzacja procesów, CRM, automatyzacja biznesu" />
+<link rel="canonical" href="https://martingrowth.pl" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://martingrowth.pl" />
+<meta property="og:title" content="Martin Growth | Partner operacyjny wzrostu dla firm" />
+<meta property="og:description" content="Butikowy partner operacyjny wzrostu dla firm usługowych premium. Budujemy systemy marketingowo-sprzedażowe i skalujemy operacje." />
+<meta property="og:image" content="https://martingrowth.pl/martin_growth_partners_landing_page/screen.png" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://martingrowth.pl" />
+<meta name="twitter:title" content="Martin Growth | Partner operacyjny wzrostu dla firm" />
+<meta name="twitter:description" content="Butikowy partner operacyjny wzrostu dla firm usługowych premium. Skalujemy przychody i wdrażamy zmiany w oparciu o twarde dane." />
+<meta name="twitter:image" content="https://martingrowth.pl/martin_growth_partners_landing_page/screen.png" />
+
+<!-- JSON-LD Structured Data Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://martingrowth.pl/#organization",
+      "name": "Martin Growth",
+      "description": "Boutique operational consulting firm specializing in scaling premium service businesses and implementing robust marketing infrastructure.",
+      "url": "https://martingrowth.pl",
+      "email": "office@martingrowth.pl",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Warszawa",
+        "addressCountry": "PL"
+      },
+      "areaServed": ["PL", "EU"],
+      "priceRange": "$$$",
+      "knowsAbout": ["operational growth", "marketing strategy", "CRM systems", "business scaling", "automation", "consulting"],
+      "sameAs": [
+        "https://www.instagram.com/jacobmartin"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://martingrowth.pl/#website",
+      "url": "https://martingrowth.pl",
+      "name": "Martin Growth — Partner operacyjny wzrostu dla firm",
+      "description": "Boutique operational consulting and business scaling for premium service companies.",
+      "inLanguage": "pl",
+      "publisher": { "@id": "https://martingrowth.pl/#organization" }
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#e5e2de",
+                        "on-primary-container": "#858481",
+                        "outline-variant": "#c8c7bf",
+                        "tertiary": "#000000",
+                        "surface-variant": "#e2e3e1",
+                        "primary": "#000000",
+                        "secondary-container": "#c8ebd3",
+                        "secondary-fixed": "#c8ebd3",
+                        "on-secondary-fixed-variant": "#2f4d3c",
+                        "surface-bright": "#f9f9f7",
+                        "inverse-primary": "#c9c6c3",
+                        "surface-tint": "#5f5e5c",
+                        "secondary": "#466553",
+                        "tertiary-fixed-dim": "#ecc155",
+                        "surface-dim": "#dadad8",
+                        "secondary-fixed-dim": "#adcfb8",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#474741",
+                        "outline": "#777771",
+                        "inverse-surface": "#2f3130",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#a37f15",
+                        "on-tertiary-fixed": "#251a00",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#e8e8e6",
+                        "on-secondary-container": "#4c6b59",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1a1c1b",
+                        "tertiary-container": "#251a00",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#022112",
+                        "surface-container-highest": "#e2e3e1",
+                        "primary-fixed-dim": "#c9c6c3",
+                        "on-background": "#1a1c1b",
+                        "surface": "#f9f9f7",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-primary-fixed-variant": "#474744",
+                        "tertiary-fixed": "#ffdf97",
+                        "background": "#f9f9f7",
+                        "on-tertiary-fixed-variant": "#5a4400",
+                        "surface-container-low": "#f4f4f2",
+                        "surface-container": "#eeeeec",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#1c1c1a",
+                        "primary-container": "#1c1c1a",
+                        "brand-forest": "#1C3A2A",
+                        "brand-gold": "#B8922A",
+                        "brand-warm-white": "#FAFAF8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0",
+                        "lg": "0",
+                        "xl": "0",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-mobile": "24px",
+                        "stack-xl": "96px",
+                        "gutter": "32px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "margin-desktop": "80px",
+                        "stack-sm": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "serif": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .hairline { height: 0.5px; background-color: #B8922A; border: none; }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .thin-border { border-width: 0.5px; }
+        
+        /* Premium navigation underline animation */
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 0.5px;
+            bottom: 0;
+            left: 0;
+            background-color: #B8922A;
+            transform-origin: bottom right;
+            transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Luxury scrollbar styling matching green/gold brand */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAFAF8;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1C3A2A;
+            border-radius: 0px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B8922A;
+        }
+    </style>
+</head>
+<body class="bg-brand-warm-white text-on-surface font-body-md antialiased overflow-x-hidden">
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-brand-warm-white/98 border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a href="#" class="flex items-center gap-3 group">
+<svg class="h-8 w-8 text-primary group-hover:text-brand-gold transition-colors duration-300" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="transparent" />
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Playfair Display, serif" font-size="18" font-weight="600" fill="currentColor">MG</text>
+</svg>
+<span class="font-serif text-lg md:text-xl font-medium tracking-tight text-primary group-hover:text-brand-gold transition-colors duration-300">Martin Growth</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface hover:text-brand-gold transition-colors pb-1 nav-link" href="#o-nas">O NAS</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-brand-gold transition-colors pb-1 nav-link" href="#jak-dzialamy">JAK DZIAŁAMY</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-brand-gold transition-colors pb-1 nav-link" href="#wspolpraca">WSPÓŁPRACA</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-brand-gold transition-colors pb-1 nav-link" href="#kontakt">KONTAKT</a>
+</div>
+<div class="hidden md:block">
+<a href="#kontakt" class="bg-brand-forest text-on-primary px-6 py-3 font-label-caps text-[11px] tracking-widest hover:bg-[#1A1A18] transition-colors duration-300 inline-block">
+                UMÓW ROZMOWĘ
+            </a>
+</div>
+<!-- Mobile Hamburger Button -->
+<button id="mobile-menu-btn" class="md:hidden text-primary focus:outline-none flex flex-col justify-center items-end gap-1.5 w-6 h-6" aria-label="Menu" aria-expanded="false">
+<span class="w-6 h-[1.5px] bg-primary transition-all duration-300"></span>
+<span class="w-4 h-[1.5px] bg-primary transition-all duration-300"></span>
+</button>
+</div>
+
+<!-- Mobile Menu Panel (Drawer) -->
+<div id="mobile-menu" class="fixed inset-y-0 right-0 z-[100] w-full max-w-[320px] bg-brand-warm-white border-l border-outline-variant/30 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col justify-between p-8">
+<div class="flex flex-col gap-10">
+<div class="flex justify-between items-center pb-4 border-b border-outline-variant/20">
+<span class="font-serif text-xl font-medium tracking-tight text-primary">Martin Growth</span>
+<button id="mobile-menu-close" class="text-primary focus:outline-none flex items-center justify-center p-2 hover:text-brand-gold transition-colors" aria-label="Zamknij menu">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-8">
+<a class="font-serif text-3xl text-primary hover:text-brand-gold transition-colors flex items-baseline gap-4 group" href="#o-nas">
+<span class="font-sans text-[10px] tracking-widest text-brand-gold">01</span>
+<span class="border-b border-transparent group-hover:border-brand-gold/60 pb-1 transition-all duration-300">O NAS</span>
+</a>
+<a class="font-serif text-3xl text-primary hover:text-brand-gold transition-colors flex items-baseline gap-4 group" href="#jak-dzialamy">
+<span class="font-sans text-[10px] tracking-widest text-brand-gold">02</span>
+<span class="border-b border-transparent group-hover:border-brand-gold/60 pb-1 transition-all duration-300">JAK DZIAŁAMY</span>
+</a>
+<a class="font-serif text-3xl text-primary hover:text-brand-gold transition-colors flex items-baseline gap-4 group" href="#wspolpraca">
+<span class="font-sans text-[10px] tracking-widest text-brand-gold">03</span>
+<span class="border-b border-transparent group-hover:border-brand-gold/60 pb-1 transition-all duration-300">WSPÓŁPRACA</span>
+</a>
+<a class="font-serif text-3xl text-primary hover:text-brand-gold transition-colors flex items-baseline gap-4 group" href="#kontakt">
+<span class="font-sans text-[10px] tracking-widest text-brand-gold">04</span>
+<span class="font-sans text-[10px] tracking-widest text-brand-gold">04</span>
+<span class="border-b border-transparent group-hover:border-brand-gold/60 pb-1 transition-all duration-300">KONTAKT</span>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4 mt-auto">
+<a href="#kontakt" id="mobile-cta-btn" class="w-full text-center bg-brand-forest text-on-primary py-4 font-label-caps text-label-caps hover:bg-[#1A1A18] transition-colors duration-300 block">
+UMÓW ROZMOWĘ
+</a>
+<p class="text-center text-[10px] text-on-surface-variant font-label-caps tracking-wider">© 2025 Martin Growth</p>
+</div>
+</div>
+
+<!-- Backdrop Overlay for Mobile Menu -->
+<div id="mobile-menu-backdrop" class="fixed inset-0 z-[90] bg-primary/45 hidden md:hidden transition-opacity duration-300 opacity-0"></div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-32 pb-16 overflow-hidden bg-brand-warm-white">
+  <!-- Subtle line dividers on the background for architectural feel -->
+  <div class="absolute top-0 bottom-0 left-[8%] w-[0.5px] bg-outline-variant/10 hidden lg:block"></div>
+  <div class="absolute top-0 bottom-0 left-[58%] w-[0.5px] bg-outline-variant/10 hidden lg:block"></div>
+  
+  <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-12 gap-gutter items-center w-full">
+    <!-- Left Column: Content -->
+    <div class="col-span-12 lg:col-span-7 fade-in flex flex-col justify-center">
+      <span class="font-label-caps text-[11px] tracking-[0.25em] text-brand-gold block mb-6 uppercase">Martin Growth — Partner operacyjny wzrostu dla firm</span>
+      <h1 class="font-headline-lg text-headline-md lg:text-display-lg text-primary mb-8 leading-[1.1] tracking-tight max-w-3xl">
+        Nie jesteśmy agencją.<br>Jesteśmy partnerem, który zarabia, gdy Ty zarabiasz.
+      </h1>
+      <div class="border-l-[0.5px] border-brand-gold/40 pl-6 md:pl-8 max-w-xl">
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+          Wchodzimy bezpośrednio do Twojej struktury, diagnozujemy wąskie gardła procesowe i wdrażamy trwałe ulepszenia. Skalujemy operacje firm usługowych premium w oparciu o twarde dane i sprawdzoną infrastrukturę marketingowo-sprzedażową.
+        </p>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-8">
+          <a href="#kontakt" class="bg-brand-forest text-on-primary px-8 py-4 font-label-caps text-label-caps tracking-widest hover:bg-opacity-95 transition-all text-center block w-full sm:w-auto">
+            ZGŁOŚ FIRMĘ DO ANALIZY
+          </a>
+          <a href="#o-nas" class="font-label-caps text-label-caps tracking-widest text-primary flex items-center gap-2 group border-b-[0.5px] border-brand-gold/40 pb-0.5 hover:border-brand-gold hover:text-brand-gold transition-colors duration-300">
+            POZNAJ NASZĄ METODĘ
+            <span class="material-symbols-outlined text-[16px] transition-transform duration-300 group-hover:translate-x-1">arrow_right_alt</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Right Column: Premium Asymmetric Image -->
+    <div class="hidden lg:block lg:col-span-5 fade-in p-4 bg-brand-warm-white border-[0.5px] border-outline-variant/30">
+      <img class="w-full aspect-[3/4] object-cover grayscale contrast-125 brightness-95" alt="Monochromatyczna fotografia nowoczesnej architektury biznesowej reprezentującej stabilność i precyzję" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCrMy0r78V9WbPq9hAt5p8x70YCOENROIfCCiVKtUga3fS-xwBkkYLBEjhXfxPItvdxYTBNfxjus-ckQC0NzCKI9deQl2M4isVCWxmh6jt-PuToPtdQ8RVvgSx1vTxezoyjpUtNccM8-XPXK3Euhl_WEzGJV-tPJ7Dh7EQBMYAogZxPRwtK8358zxdxpq3oWL9eMBGSLgvGQEN-ZtPOb8bthcJP6sJJ9tchuToxGX5Z1r7iWEYqnZs94sBRBvrcefefPSknWZz2al5"/>
+    </div>
+  </div>
+</header>
+<!-- Problem (Diagnoza) -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto fade-in scroll-mt-24" id="o-nas">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Editorial Header -->
+<div class="lg:col-span-5 mb-8 lg:mb-0">
+<span class="font-label-caps text-label-caps text-brand-gold block mb-4">DIAGNOZA</span>
+<hr class="hairline w-16 mb-8"/>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary leading-tight">
+                Większość dobrych firm nie ma problemu z jakością. Ma problem z systemem.
+            </h2>
+</div>
+<!-- Right Column: Problem List -->
+<div class="lg:col-span-7 space-y-2">
+<div class="py-5 border-b-[0.5px] border-outline-variant/30 flex items-start gap-4">
+<span class="font-serif italic text-xl text-brand-gold select-none w-8 text-right">01.</span>
+<p class="font-body-md text-on-surface">Przepalanie budżetów na kampanie marketingowe, które nie konwertują w realną sprzedaż.</p>
+</div>
+<div class="py-5 border-b-[0.5px] border-outline-variant/30 flex items-start gap-4">
+<span class="font-serif italic text-xl text-brand-gold select-none w-8 text-right">02.</span>
+<p class="font-body-md text-on-surface">Brak przewidywalności w lejku sprzedażowym, powodujący chaos operacyjny i płynnościowy.</p>
+</div>
+<div class="py-5 border-b-[0.5px] border-outline-variant/30 flex items-start gap-4">
+<span class="font-serif italic text-xl text-brand-gold select-none w-8 text-right">03.</span>
+<p class="font-body-md text-on-surface">Krytyczna zależność biznesu od pojedynczych osób zamiast od zautomatyzowanych procesów.</p>
+</div>
+<div class="py-5 border-b-[0.5px] border-outline-variant/30 flex items-start gap-4">
+<span class="font-serif italic text-xl text-brand-gold select-none w-8 text-right">04.</span>
+<p class="font-body-md text-on-surface">Niewykorzystany potencjał obecnej bazy klientów i wysoki wskaźnik utraty kontraktów (churn).</p>
+</div>
+<div class="py-5 border-b-[0.5px] border-outline-variant/30 flex items-start gap-4">
+<span class="font-serif italic text-xl text-brand-gold select-none w-8 text-right">05.</span>
+<p class="font-body-md text-on-surface">Brak czytelnych wskaźników KPI – kluczowe decyzje biznesowe oparte na "intuicji".</p>
+</div>
+<div class="py-5 border-b-[0.5px] border-outline-variant/30 flex items-start gap-4">
+<span class="font-serif italic text-xl text-brand-gold select-none w-8 text-right">06.</span>
+<p class="font-body-md text-on-surface">Zatrzymanie wzrostu i bariera rentowności przy próbach skalowania skali operacji.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution (Rozwiązanie) -->
+<section class="py-stack-xl bg-surface-container-low scroll-mt-24" id="jak-dzialamy">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-12 md:gap-y-0">
+<div class="pt-8 md:pt-0 md:pl-8 border-t-[0.5px] md:border-t-0 md:border-l-[0.5px] border-brand-gold/40 fade-in">
+<span class="font-serif italic text-lg text-brand-gold mb-4 block">01 / Growth Strategy</span>
+<h3 class="font-headline-md text-headline-md mb-4">Strategia Wzrostu</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">Tworzymy ramy dla zrównoważonego wzrostu. Analizujemy rynek, konkurencję i Twój produkt, by znaleźć "leverage points" – punkty dźwigni, w których najmniejsza zmiana daje największy zwrot.</p>
+</div>
+<div class="pt-8 md:pt-0 md:pl-8 border-t-[0.5px] md:border-t-0 md:border-l-[0.5px] border-brand-gold/40 fade-in" style="transition-delay: 100ms;">
+<span class="font-serif italic text-lg text-brand-gold mb-4 block">02 / Marketing Infrastructure</span>
+<h3 class="font-headline-md text-headline-md mb-4">Infrastruktura</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">Nie poprzestajemy na doradztwie. Budujemy kompletne systemy CRM, automatyzacje lejka i zaawansowaną analitykę, pozwalającą widzieć zwrot z każdej zainwestowanej złotówki.</p>
+</div>
+<div class="pt-8 md:pt-0 md:pl-8 border-t-[0.5px] md:border-t-0 md:border-l-[0.5px] border-brand-gold/40 fade-in" style="transition-delay: 200ms;">
+<span class="font-serif italic text-lg text-brand-gold mb-4 block">03 / Operational Partnership</span>
+<h3 class="font-headline-md text-headline-md mb-4">Współodpowiedzialność</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">Działamy jako zewnętrzny dyrektor operacyjny Twojego wzrostu. Dzielimy się ryzykiem i zyskiem, biorąc pełną odpowiedzialność za bezbłędną egzekucję ustalonej strategii.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- For Whom (Tags) -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center fade-in">
+<span class="font-label-caps text-label-caps text-brand-gold block mb-8">SPECJALIZACJA BRANŻOWA</span>
+<div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+<span class="px-5 py-3 border-[0.5px] border-outline/30 font-label-caps text-[10px] tracking-[0.2em] text-on-surface-variant hover:border-brand-gold hover:text-brand-gold transition-colors duration-300">GABINETY MEDYCYNY ESTETYCZNEJ</span>
+<span class="px-5 py-3 border-[0.5px] border-outline/30 font-label-caps text-[10px] tracking-[0.2em] text-on-surface-variant hover:border-brand-gold hover:text-brand-gold transition-colors duration-300">SZKOŁY JĘZYKOWE</span>
+<span class="px-5 py-3 border-[0.5px] border-outline/30 font-label-caps text-[10px] tracking-[0.2em] text-on-surface-variant hover:border-brand-gold hover:text-brand-gold transition-colors duration-300">FIRMY USŁUGOWE B2B</span>
+<span class="px-5 py-3 border-[0.5px] border-outline/30 font-label-caps text-[10px] tracking-[0.2em] text-on-surface-variant hover:border-brand-gold hover:text-brand-gold transition-colors duration-300">E-COMMERCE HIGH-TICKET</span>
+<span class="px-5 py-3 border-[0.5px] border-outline/30 font-label-caps text-[10px] tracking-[0.2em] text-on-surface-variant hover:border-brand-gold hover:text-brand-gold transition-colors duration-300">PRODUCENCI MEBLI PREMIUM</span>
+<span class="px-5 py-3 border-[0.5px] border-outline/30 font-label-caps text-[10px] tracking-[0.2em] text-on-surface-variant hover:border-brand-gold hover:text-brand-gold transition-colors duration-300">BUTIKOWE BIURA NIERUCHOMOŚCI</span>
+</div>
+</section>
+<!-- Cooperation Models (Ścieżki Współpracy) -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto fade-in scroll-mt-24" id="wspolpraca">
+  <div class="text-center mb-stack-lg">
+    <span class="font-label-caps text-label-caps text-brand-gold block mb-4">WSPÓŁPRACA</span>
+    <h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary leading-tight">Ścieżki Współpracy</h2>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter items-stretch">
+    <!-- Column 1: Growth Audit -->
+    <div class="border-[0.5px] border-outline-variant/40 p-8 flex flex-col justify-between hover:bg-brand-forest/[0.02] hover:border-brand-gold/60 transition-all duration-300 group bg-brand-warm-white">
+      <div>
+        <span class="font-serif italic text-brand-gold text-lg block mb-2 transition-colors">01 / Growth Audit</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-4">Growth Audit</h3>
+        <span class="font-label-caps text-[9px] text-on-surface-variant/80 border-[0.5px] border-outline-variant/60 px-3 py-1 inline-block mb-6 tracking-[0.15em] bg-transparent">DIAGNOZA</span>
+        <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">
+          Nie wiesz co nie działa — albo wiesz, ale chcesz to potwierdzić. Sprawdzamy firmę od środka i mówimy Ci wprost gdzie tracisz klientów i pieniądze.
+        </p>
+        <span class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-3">ZAKRES DLA CIEBIE</span>
+        <ul class="space-y-3 mb-8 border-t-[0.5px] border-outline-variant/20 pt-4 text-sm text-on-surface-variant font-body-md">
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Analiza strony, oferty i wizerunku</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Ocena procesu sprzedaży i obsługi</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Przegląd Google, reklam i contentu</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Raport z priorytetami i planem działania</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Sesja robocza 90 minut</span>
+          </li>
+        </ul>
+      </div>
+      <div class="border-t-[0.5px] border-outline-variant/30 pt-6 mt-auto">
+        <span class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-1">INWESTYCJA</span>
+        <p class="font-headline-md text-xl text-primary font-medium mb-3">2 500 – 4 000 zł <span class="text-xs font-body-md text-on-surface-variant font-normal">jednorazowo</span></p>
+        <span class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-1">CZAS REALIZACJI</span>
+        <p class="font-body-md text-on-surface-variant italic text-sm">wynik w 7–10 dni roboczych</p>
+      </div>
+    </div>
+
+    <!-- Column 2: Growth System (Highlighted) -->
+    <div class="border-[1.5px] border-brand-gold p-8 flex flex-col justify-between bg-brand-forest/[0.01] hover:bg-brand-forest/[0.03] transition-all duration-300 group relative">
+      <div class="absolute -top-3 right-6 bg-brand-gold text-brand-warm-white font-label-caps text-[9px] tracking-widest px-3 py-1 select-none">
+        NAJCZĘŚCIEJ WYBIERANY
+      </div>
+      <div>
+        <span class="font-serif italic text-brand-gold text-lg block mb-2 transition-colors">02 / Growth System</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-4">Growth System</h3>
+        <span class="font-label-caps text-[9px] text-brand-gold border-[0.5px] border-brand-gold px-3 py-1 inline-block mb-6 tracking-[0.15em] bg-transparent">WDROŻENIE + PROWADZENIE</span>
+        <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">
+          Wiesz że coś trzeba zmienić i chcesz żeby ktoś to po prostu zrobił — i pilnował wyników. Budujemy system od zera lub naprawiamy to co masz.
+        </p>
+        <span class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-3">ZAKRES DLA CIEBIE</span>
+        <ul class="space-y-3 mb-8 border-t-[0.5px] border-outline-variant/20 pt-4 text-sm text-on-surface-variant font-body-md">
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Nowa strona lub gruntowna przebudowa</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Zdjęcia biznesowe i wizerunek marki</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Google Business, SEO lokalne</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Kampanie reklamowe Meta / Google Ads</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>CRM i proces obsługi zapytań</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Miesięczne raportowanie i optymalizacja</span>
+          </li>
+        </ul>
+      </div>
+      <div class="border-t-[0.5px] border-outline-variant/30 pt-6 mt-auto">
+        <span class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-1">INWESTYCJA</span>
+        <p class="font-headline-md text-xl text-primary font-medium mb-1">Setup 8 000 – 15 000 zł</p>
+        <p class="font-body-lg text-md text-primary font-medium mb-3">+ retainer 3 000 – 6 000 zł/mc</p>
+        <span class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-1">WARUNEK WSPÓŁPRACY</span>
+        <p class="font-body-md text-on-surface-variant italic text-sm">minimum 6 miesięcy współpracy</p>
+      </div>
+    </div>
+
+    <!-- Column 3: Partnerstwo -->
+    <div class="border-[0.5px] border-outline-variant/40 p-8 flex flex-col justify-between hover:bg-brand-forest/[0.02] hover:border-brand-gold/60 transition-all duration-300 group bg-brand-warm-white">
+      <div>
+        <span class="font-serif italic text-brand-gold text-lg block mb-2 transition-colors">03 / Partnerstwo</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-4">Partnerstwo</h3>
+        <span class="font-label-caps text-[9px] text-on-surface-variant/80 border-[0.5px] border-outline-variant/60 px-3 py-1 inline-block mb-6 tracking-[0.15em] bg-transparent">DLA WYBRANYCH FIRM</span>
+        <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">
+          Widzimy w Twojej firmie realny potencjał długoterminowego wzrostu. Wchodzimy głębiej — nie jako wykonawca, ale jako partner który zarabia gdy Ty zarabiasz.
+        </p>
+        <span class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-3">ZAKRES DLA CIEBIE</span>
+        <ul class="space-y-3 mb-8 border-t-[0.5px] border-outline-variant/20 pt-4 text-sm text-on-surface-variant font-body-md">
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Pełne zaangażowanie operacyjne</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Repozycjonowanie oferty i modelu</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Nowe kanały sprzedaży i segmenty</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Procesy, skalowanie, drugi lokal</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-gold select-none mt-0.5">•</span>
+            <span>Model: success fee, revenue share lub udziały</span>
+          </li>
+        </ul>
+      </div>
+      <div class="border-t-[0.5px] border-outline-variant/30 pt-6 mt-auto">
+        <span class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-1">INWESTYCJA</span>
+        <p class="font-headline-md text-xl text-primary font-medium mb-3">Zarabiamy razem z Tobą</p>
+        <span class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-1">WARUNKI WSPÓŁPRACY</span>
+        <p class="font-body-md text-on-surface-variant italic text-sm">Brak stałego wynagrodzenia — ustalamy indywidualnie</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Note and CTA under the cards -->
+  <div class="mt-16 max-w-3xl mx-auto text-center border-t-[0.5px] border-outline-variant/30 pt-12">
+    <p class="font-body-lg text-lg text-on-surface-variant mb-8 leading-relaxed">
+      Nie wiesz którą ścieżkę wybrać? <span class="font-serif italic text-brand-gold">Zacznij od Diagnozy</span> — to najszybszy sposób żeby dowiedzieć się co naprawdę wymaga uwagi w Twojej firmie. Resztę ustalimy na rozmowie.
+    </p>
+    <div class="flex justify-center">
+      <a href="#kontakt" class="bg-brand-forest text-on-primary px-8 py-4 font-label-caps text-label-caps tracking-widest hover:bg-opacity-95 transition-all block w-full sm:w-auto text-center">
+        ZGŁOŚ FIRMĘ DO ANALIZY
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Process -->
+<section class="py-stack-xl bg-primary text-on-primary">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<span class="font-label-caps text-label-caps text-secondary-fixed mb-stack-lg block text-center">NASZA ŚCIEŻKA</span>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-stack-md relative">
+<!-- Connectors for desktop -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-[1px] bg-outline opacity-20 z-0"></div>
+<div class="relative z-10 text-center flex flex-col items-center">
+<div class="w-24 h-24 bg-brand-forest border border-outline flex items-center justify-center mb-6">
+<span class="font-headline-md">1</span>
+</div>
+<h4 class="font-label-caps text-[10px] mb-2">ANALIZA</h4>
+<p class="text-on-primary-container text-sm">Głęboki audyt danych i procesów.</p>
+</div>
+<div class="relative z-10 text-center flex flex-col items-center">
+<div class="w-24 h-24 bg-brand-forest border border-outline flex items-center justify-center mb-6">
+<span class="font-headline-md">2</span>
+</div>
+<h4 class="font-label-caps text-[10px] mb-2">DIAGNOZA</h4>
+<p class="text-on-primary-container text-sm">Wskazanie miejsc utraty kapitału.</p>
+</div>
+<div class="relative z-10 text-center flex flex-col items-center">
+<div class="w-24 h-24 bg-brand-forest border border-outline flex items-center justify-center mb-6">
+<span class="font-headline-md">3</span>
+</div>
+<h4 class="font-label-caps text-[10px] mb-2">PLAN</h4>
+<p class="text-on-primary-container text-sm">Strategia konkretnych działań.</p>
+</div>
+<div class="relative z-10 text-center flex flex-col items-center">
+<div class="w-24 h-24 bg-brand-forest border border-outline flex items-center justify-center mb-6">
+<span class="font-headline-md">4</span>
+</div>
+<h4 class="font-label-caps text-[10px] mb-2">WDROŻENIE</h4>
+<p class="text-on-primary-container text-sm">Budowa infrastruktury wzrostu.</p>
+</div>
+<div class="relative z-10 text-center flex flex-col items-center">
+<div class="w-24 h-24 bg-brand-forest border border-outline flex items-center justify-center mb-6">
+<span class="font-headline-md">5</span>
+</div>
+<h4 class="font-label-caps text-[10px] mb-2">SKALOWANIE</h4>
+<p class="text-on-primary-container text-sm">Powtarzalne zwiększanie wolumenu.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto fade-in">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5">
+<img class="w-full aspect-[4/5] object-cover grayscale" alt="Portret założyciela Jacoba Martina w garniturze reprezentujący profesjonalizm i doświadczenie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJTnqSs5SzvLAL2QKNbUviPOMYudDJbe5zoUEYtGR7bTybW5cWcxI0uthSOLOhhrr0Nt7Yanscp0zeys9setlxHThBe5vYdbx1cpZw_kD6Dc7hj8J5xdBBI8SbfGW-3P1SySLZugqhGV-xk94-SBkRuhbNDcbwbo99U8N8ile1ssmEN0M6vw0jwvtfLZEnIgB8pTZSQUgQF1nmMj9GxvkddG7v_KZ0pOWZ9j3ICzX-TPN3aX3GSvFqgYOdnarmsvXw9H7Qr53BiKwc"/>
+</div>
+<div class="lg:col-span-7 lg:pl-stack-lg">
+<span class="font-label-caps text-label-caps text-brand-gold mb-stack-md block">FOUNDER</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary mb-6">Jacob Martin</h2>
+<div class="relative pl-8 md:pl-10 mb-6 border-l-[0.5px] border-brand-gold/60">
+<span class="font-serif text-brand-gold text-6xl absolute -left-2 -top-5 select-none opacity-40">“</span>
+<p class="font-headline-md text-xl md:text-2xl text-primary leading-relaxed italic font-medium">
+                    W biznesie nie wierzę w „kreatywne pomysły”, które nie mają bezpośredniego odzwierciedlenia w arkuszu kalkulacyjnym. Sukces firmy to suma doskonale zaprojektowanych procesów i bezwzględnej egzekucji.
+                </p>
+</div>
+<p class="font-body-md text-on-surface-variant mb-8 leading-relaxed">
+                    Z ponad dekadą doświadczenia w restrukturyzacji operacyjnej i marketingu efektywnościowym, Jacob założył Martin Growth z jedną misją: eliminacji marnotrawstwa kapitału w firmach z sektora usług premium. Specjalizuje się w projektowaniu systemów, które uniezależniają biznes od fizycznej obecności właściciela.
+                </p>
+<div class="flex items-center gap-6">
+<a href="https://www.linkedin.com/in/jacobmartin" target="_blank" rel="noopener noreferrer" class="font-label-caps text-[11px] tracking-widest text-on-surface-variant border-b-[0.5px] border-brand-gold/30 pb-0.5 hover:border-brand-gold hover:text-brand-gold transition-all duration-300 flex items-center gap-2">
+                        LINKEDIN <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<a href="mailto:office@martingrowth.pl" class="font-label-caps text-[11px] tracking-widest text-on-surface-variant border-b-[0.5px] border-brand-gold/30 pb-0.5 hover:border-brand-gold hover:text-brand-gold transition-all duration-300 flex items-center gap-2">
+                        EMAIL <span class="material-symbols-outlined text-[14px]">mail</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="py-stack-xl bg-[#1A1A18] text-white scroll-mt-24" id="kontakt">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
+<div>
+<span class="font-label-caps text-label-caps text-brand-gold block mb-4">KONTAKT</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg mb-stack-md leading-tight">Masz firmę z potencjałem?<br/>Porozmawiajmy.</h2>
+<p class="font-body-lg text-on-primary-container mb-stack-lg max-w-md leading-relaxed">
+                    Analizujemy zgłoszenia w ciągu 48 godzin. Jeśli widzimy przestrzeń do współpracy, zaproponujemy termin darmowej konsultacji strategicznej.
+                </p>
+<div class="space-y-6 pt-4 border-t-[0.5px] border-outline-variant/10 max-w-md">
+<p class="font-label-caps text-[11px] tracking-[0.2em] flex items-center gap-4 text-on-primary-container">
+<span class="material-symbols-outlined text-brand-gold text-[18px]">phone_iphone</span> +48 700 000 000
+                    </p>
+<p class="font-label-caps text-[11px] tracking-[0.2em] flex items-center gap-4 text-on-primary-container">
+<span class="material-symbols-outlined text-brand-gold text-[18px]">alternate_email</span> office@martingrowth.pl
+                    </p>
+<p class="font-label-caps text-[11px] tracking-[0.2em] flex items-center gap-4 text-on-primary-container">
+<span class="material-symbols-outlined text-brand-gold text-[18px]">location_on</span> Warszawa / Londyn
+                    </p>
+</div>
+</div>
+<form class="space-y-6">
+<div class="border-b-[0.5px] border-outline-variant/30 focus-within:border-brand-gold transition-colors duration-300 py-2">
+<label class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-1">IMIĘ I NAZWISKO</label>
+<input class="w-full bg-transparent border-none text-white focus:ring-0 px-0 placeholder-outline text-sm" placeholder="Jan Kowalski" type="text" required/>
+</div>
+<div class="border-b-[0.5px] border-outline-variant/30 focus-within:border-brand-gold transition-colors duration-300 py-2">
+<label class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-1">ADRES E-MAIL</label>
+<input class="w-full bg-transparent border-none text-white focus:ring-0 px-0 placeholder-outline text-sm" placeholder="jan@firma.pl" type="email" required/>
+</div>
+<div class="border-b-[0.5px] border-outline-variant/30 focus-within:border-brand-gold transition-colors duration-300 py-2">
+<label class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-1">MIESIĘCZNY PRZYCHÓD (PLN)</label>
+<select class="w-full bg-transparent border-none text-white focus:ring-0 px-0 text-sm cursor-pointer">
+<option class="bg-[#1A1A18]">Poniżej 50k</option>
+<option class="bg-[#1A1A18]">50k - 200k</option>
+<option class="bg-[#1A1A18]">200k - 1mln</option>
+<option class="bg-[#1A1A18]">Powyżej 1mln</option>
+</select>
+</div>
+<div class="border-b-[0.5px] border-outline-variant/30 focus-within:border-brand-gold transition-colors duration-300 py-2">
+<label class="font-label-caps text-[9px] tracking-widest text-brand-gold/80 block mb-1">WIADOMOŚĆ / WYZWANIE</label>
+<textarea class="w-full bg-transparent border-none text-white focus:ring-0 px-0 h-24 resize-none text-sm placeholder-outline" placeholder="Opisz krótko swój problem..." required></textarea>
+</div>
+<button type="submit" class="w-full py-4 bg-brand-forest text-on-primary font-label-caps text-label-caps tracking-widest hover:bg-[#FAFAF8] hover:text-[#1A1A18] transition-colors duration-300 mt-4">
+                    WYŚLIJ ZAPYTANIE
+                </button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-brand-warm-white py-stack-lg border-t-[0.5px] border-outline-variant/30">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-gutter">
+<div>
+<div class="flex items-center gap-4 mb-4">
+<svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="transparent" />
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Playfair Display, serif" font-size="18" font-weight="600" fill="currentColor">MG</text>
+</svg>
+<span class="font-headline-md text-headline-md text-primary">Martin Growth</span>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-sm italic">
+                    Partner operacyjny wzrostu dla firm.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-stack-lg">
+<div class="space-y-2">
+<h5 class="font-label-caps text-label-caps mb-4">LEGAL</h5>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="#">Polityka prywatności</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="#">Regulamin</a>
+</div>
+<div class="space-y-2">
+<h5 class="font-label-caps text-label-caps mb-4">SOCIAL</h5>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="#">LinkedIn</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="#">X / Twitter</a>
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-stack-lg pt-stack-md border-t border-outline-variant/10">
+<p class="font-label-caps text-[10px] text-on-surface-variant">© 2025 Martin Growth. Wszystkie prawa zastrzeżone.</p>
+</div>
+</footer>
+<script>
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Mobile menu drawer logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+
+        function openMobileMenu() {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+            mobileMenuBackdrop.classList.remove('hidden');
+            setTimeout(() => {
+                mobileMenuBackdrop.classList.remove('opacity-0');
+                mobileMenuBackdrop.classList.add('opacity-100');
+            }, 10);
+            mobileMenuBtn.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenuBackdrop.classList.remove('opacity-100');
+            mobileMenuBackdrop.classList.add('opacity-0');
+            setTimeout(() => {
+                mobileMenuBackdrop.classList.add('hidden');
+            }, 300);
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+        mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+    </script>
+</body></html>
