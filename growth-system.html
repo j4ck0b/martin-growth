@@ -32,6 +32,7 @@
             --spacing-stack-md: 24px;
         }
     </style>
+    <script src="/assets/config.js"></script>
 </head>
 <body class="bg-brand-warm-white text-primary font-body antialiased overflow-x-hidden">
     <!-- Navigation -->
@@ -269,7 +270,7 @@
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({
-                        access_key: "YOUR_ACCESS_KEY_HERE",
+                        access_key: (window.FP_CONFIG && window.FP_CONFIG.web3forms_key) || "YOUR_ACCESS_KEY_HERE",
                         subject: "Nowe zgłoszenie: " + data.service,
                         ...data
                     })
