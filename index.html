@@ -318,24 +318,16 @@ UMÓW ROZMOWĘ
         </div>
       </div>
     </div>
-    <!-- Right Column: Premium Asymmetric Image styled as a floating macOS Window -->
-    <div class="col-span-12 lg:col-span-5 fade-in mt-12 lg:mt-0 floating-element">
-      <div class="w-full aspect-[3/4] relative rounded-lg border-[0.5px] border-outline-variant/40 shadow-[0_10px_40px_rgba(28,58,42,0.08)] hover:shadow-[0_15px_50px_rgba(28,58,42,0.15)] transition-all duration-500 hover:-translate-y-1 overflow-hidden group bg-brand-warm-white">
-        <!-- Window Title Bar -->
-        <div class="h-8 bg-surface-container-low border-b-[0.5px] border-outline-variant/30 flex items-center px-4 justify-between select-none">
-          <div class="flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-[#ff5f56] opacity-80 group-hover:opacity-100 transition-opacity"></span>
-            <span class="w-2 h-2 rounded-full bg-[#ffbd2e] opacity-80 group-hover:opacity-100 transition-opacity"></span>
-            <span class="w-2 h-2 rounded-full bg-[#27c93f] opacity-80 group-hover:opacity-100 transition-opacity"></span>
-          </div>
-          <div class="font-label-caps text-[8px] tracking-widest text-on-surface-variant/70">firstpartners_architecture.jpg</div>
-          <div class="w-4"></div>
-        </div>
+    <!-- Right Column: Premium Asymmetric Image with elegant minimalist framing -->
+    <div class="col-span-12 lg:col-span-5 fade-in mt-12 lg:mt-0 relative group">
+      <!-- Decorative background gold frame offset -->
+      <div class="absolute -inset-2 border-[0.5px] border-brand-gold/30 pointer-events-none transition-transform duration-500 group-hover:translate-x-1 group-hover:translate-y-1"></div>
+      <div class="w-full aspect-[3/4] relative border-[0.5px] border-brand-forest/30 shadow-[0_10px_40px_rgba(28,58,42,0.06)] overflow-hidden bg-brand-warm-white">
         <!-- Image Area -->
-        <div class="relative w-full h-[calc(100%-32px)] overflow-hidden">
+        <div class="relative w-full h-full overflow-hidden">
           <img class="w-full h-full object-cover grayscale contrast-125 brightness-95 group-hover:scale-105 transition-transform duration-700 ease-out" alt="Monochromatyczna fotografia nowoczesnej architektury biznesowej reprezentującej stabilność i precyzję" src="./assets/hero-building.jpg"/>
           <!-- Stats Overlay Card -->
-          <div class="absolute bottom-4 left-4 right-4 bg-brand-warm-white/95 backdrop-blur border-[0.5px] border-outline-variant/40 p-4 shadow-lg rounded flex justify-between items-center transition-all duration-500 transform translate-y-2 group-hover:translate-y-0 opacity-90 group-hover:opacity-100">
+          <div class="absolute bottom-4 left-4 right-4 bg-brand-warm-white/95 backdrop-blur border-[0.5px] border-outline-variant/40 p-4 shadow-lg flex justify-between items-center transition-all duration-500 transform translate-y-2 group-hover:translate-y-0 opacity-90 group-hover:opacity-100">
             <div>
               <p class="font-label-caps text-[8px] tracking-widest text-brand-gold font-bold">OPERATIONAL SCALE</p>
               <p class="font-serif text-[11px] font-semibold text-primary mt-0.5">Wzrost Rentowności</p>
@@ -436,18 +428,11 @@ UMÓW ROZMOWĘ
   </div>
 
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter items-stretch">
-    <!-- Column 1: Growth Audit styled as a macOS Window -->
-    <div class="border-[0.5px] border-outline-variant/40 rounded-lg flex flex-col justify-between hover:bg-brand-forest/[0.02] hover:border-brand-gold/80 transition-all duration-300 group bg-brand-warm-white shadow-[0_4px_20px_rgba(28,58,42,0.02)] hover:shadow-[0_8px_30px_rgba(28,58,42,0.06)] overflow-hidden">
-      <!-- Card Window Header -->
-      <div class="h-8 bg-surface-container-low border-b-[0.5px] border-outline-variant/30 flex items-center px-4 justify-between select-none">
-        <div class="flex items-center gap-1.5">
-          <span class="w-2 h-2 rounded-full bg-[#ff5f56]/80 group-hover:bg-[#ff5f56] transition-colors"></span>
-          <span class="w-2 h-2 rounded-full bg-[#ffbd2e]/80 group-hover:bg-[#ffbd2e] transition-colors"></span>
-          <span class="w-2 h-2 rounded-full bg-[#27c93f]/80 group-hover:bg-[#27c93f] transition-colors"></span>
-        </div>
-        <div class="font-label-caps text-[8px] tracking-widest text-on-surface-variant/70 group-hover:text-brand-gold transition-colors">fp // growth-audit</div>
-      </div>
-      <div class="p-8 flex-1 flex flex-col justify-between">
+    <!-- Column 1: Growth Audit Card -->
+    <div class="border-[0.5px] border-outline-variant/40 rounded-none flex flex-col justify-between hover:bg-brand-forest/[0.02] hover:border-brand-gold/80 transition-all duration-300 group bg-brand-warm-white shadow-[0_4px_20px_rgba(28,58,42,0.02)] hover:shadow-[0_8px_30px_rgba(28,58,42,0.06)] overflow-hidden">
+      <!-- Top decorative accent line -->
+      <div class="h-[3px] w-full bg-brand-forest/20 group-hover:bg-brand-gold transition-colors duration-300"></div>
+      <div class="p-8 pt-10 flex-1 flex flex-col justify-between">
         <div>
           <span class="font-serif italic text-brand-gold text-lg block mb-2 transition-colors">01 / Growth Audit</span>
           <h3 class="font-headline-md text-headline-md text-primary mb-4">Growth Audit</h3>
@@ -491,21 +476,14 @@ UMÓW ROZMOWĘ
       </div>
     </div>
 
-    <!-- Column 2: Growth System (Highlighted) styled as a macOS Window -->
-    <div class="border-[1.5px] border-brand-gold rounded-lg flex flex-col justify-between bg-brand-forest/[0.01] hover:bg-brand-forest/[0.03] transition-all duration-300 group relative shadow-[0_4px_20px_rgba(28,58,42,0.04)] hover:shadow-[0_12px_40px_rgba(28,58,42,0.08)] overflow-hidden">
+    <!-- Column 2: Growth System (Highlighted) -->
+    <div class="border-[1.5px] border-brand-gold rounded-none flex flex-col justify-between bg-brand-forest/[0.01] hover:bg-brand-forest/[0.03] transition-all duration-300 group relative shadow-[0_4px_20px_rgba(28,58,42,0.04)] hover:shadow-[0_12px_40px_rgba(28,58,42,0.08)] overflow-hidden">
+      <!-- Top decorative accent line -->
+      <div class="h-[3px] w-full bg-brand-gold"></div>
       <div class="absolute top-12 right-6 bg-brand-gold text-brand-warm-white font-label-caps text-[9px] tracking-widest px-3 py-1 select-none z-10">
         NAJCZĘŚCIEJ WYBIERANY
       </div>
-      <!-- Card Window Header -->
-      <div class="h-8 bg-surface-container-low border-b-[0.5px] border-outline-variant/30 flex items-center px-4 justify-between select-none">
-        <div class="flex items-center gap-1.5">
-          <span class="w-2 h-2 rounded-full bg-[#ff5f56]"></span>
-          <span class="w-2 h-2 rounded-full bg-[#ffbd2e]"></span>
-          <span class="w-2 h-2 rounded-full bg-[#27c93f]"></span>
-        </div>
-        <div class="font-label-caps text-[8px] tracking-widest text-brand-gold">fp // growth-system</div>
-      </div>
-      <div class="p-8 flex-1 flex flex-col justify-between">
+      <div class="p-8 pt-10 flex-1 flex flex-col justify-between">
         <div>
           <span class="font-serif italic text-brand-gold text-lg block mb-2 transition-colors">02 / Growth System</span>
           <h3 class="font-headline-md text-headline-md text-primary mb-4">Growth System</h3>
@@ -554,18 +532,11 @@ UMÓW ROZMOWĘ
       </div>
     </div>
 
-    <!-- Column 3: Partnerstwo styled as a macOS Window -->
-    <div class="border-[0.5px] border-outline-variant/40 rounded-lg flex flex-col justify-between hover:bg-brand-forest/[0.02] hover:border-brand-gold/80 transition-all duration-300 group bg-brand-warm-white shadow-[0_4px_20px_rgba(28,58,42,0.02)] hover:shadow-[0_8px_30px_rgba(28,58,42,0.06)] overflow-hidden">
-      <!-- Card Window Header -->
-      <div class="h-8 bg-surface-container-low border-b-[0.5px] border-outline-variant/30 flex items-center px-4 justify-between select-none">
-        <div class="flex items-center gap-1.5">
-          <span class="w-2 h-2 rounded-full bg-[#ff5f56]/80 group-hover:bg-[#ff5f56] transition-colors"></span>
-          <span class="w-2 h-2 rounded-full bg-[#ffbd2e]/80 group-hover:bg-[#ffbd2e] transition-colors"></span>
-          <span class="w-2 h-2 rounded-full bg-[#27c93f]/80 group-hover:bg-[#27c93f] transition-colors"></span>
-        </div>
-        <div class="font-label-caps text-[8px] tracking-widest text-on-surface-variant/70 group-hover:text-brand-gold transition-colors">fp // partnerstwo</div>
-      </div>
-      <div class="p-8 flex-1 flex flex-col justify-between">
+    <!-- Column 3: Partnerstwo Card -->
+    <div class="border-[0.5px] border-outline-variant/40 rounded-none flex flex-col justify-between hover:bg-brand-forest/[0.02] hover:border-brand-gold/80 transition-all duration-300 group bg-brand-warm-white shadow-[0_4px_20px_rgba(28,58,42,0.02)] hover:shadow-[0_8px_30px_rgba(28,58,42,0.06)] overflow-hidden">
+      <!-- Top decorative accent line -->
+      <div class="h-[3px] w-full bg-brand-forest/20 group-hover:bg-brand-gold transition-colors duration-300"></div>
+      <div class="p-8 pt-10 flex-1 flex flex-col justify-between">
         <div>
           <span class="font-serif italic text-brand-gold text-lg block mb-2 transition-colors">03 / Partnerstwo</span>
           <h3 class="font-headline-md text-headline-md text-primary mb-4">Partnerstwo</h3>
