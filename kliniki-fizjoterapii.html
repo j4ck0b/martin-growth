@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="./favicon.png" />
     <link rel="apple-touch-icon" href="./favicon.png" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=500;600&amp;family=Inter:wght=400;600&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <style type="text/tailwindcss">
         @theme {
@@ -55,7 +55,51 @@
                     UMÓW ROZMOWĘ
                 </a>
             </div>
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-primary focus:outline-none flex flex-col justify-center items-end gap-1.5 w-6 h-6" aria-label="Menu" aria-expanded="false">
+                <span class="w-6 h-[1.5px] bg-primary transition-all duration-300"></span>
+                <span class="w-4 h-[1.5px] bg-primary transition-all duration-300"></span>
+            </button>
         </div>
+
+        <!-- Mobile Menu Panel (Drawer) -->
+        <div id="mobile-menu" class="fixed inset-y-0 right-0 z-[100] w-full max-w-[320px] bg-brand-warm-white border-l border-outline-variant/30 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col justify-between p-8">
+            <div class="flex flex-col gap-10">
+                <div class="flex justify-between items-center pb-4 border-b border-outline-variant/20">
+                    <span class="font-serif text-xl font-medium tracking-tight text-primary">First Partners</span>
+                    <button id="mobile-menu-close" class="text-primary focus:outline-none flex items-center justify-center p-2 hover:text-brand-gold transition-colors" aria-label="Zamknij menu">
+                        <span class="material-symbols-outlined text-2xl">close</span>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-8">
+                    <a class="font-serif text-3xl text-primary hover:text-brand-gold transition-colors flex items-baseline gap-4 group" href="/#o-nas">
+                        <span class="font-sans text-[10px] tracking-widest text-brand-gold">01</span>
+                        <span class="border-b border-transparent group-hover:border-brand-gold/60 pb-1 transition-all duration-300">O NAS</span>
+                    </a>
+                    <a class="font-serif text-3xl text-primary hover:text-brand-gold transition-colors flex items-baseline gap-4 group" href="/#jak-dzialamy">
+                        <span class="font-sans text-[10px] tracking-widest text-brand-gold">02</span>
+                        <span class="border-b border-transparent group-hover:border-brand-gold/60 pb-1 transition-all duration-300">JAK DZIAŁAMY</span>
+                    </a>
+                    <a class="font-serif text-3xl text-primary hover:text-brand-gold transition-colors flex items-baseline gap-4 group" href="/#wspolpraca">
+                        <span class="font-sans text-[10px] tracking-widest text-brand-gold">03</span>
+                        <span class="border-b border-transparent group-hover:border-brand-gold/60 pb-1 transition-all duration-300">WSPÓŁPRACA</span>
+                    </a>
+                    <a class="font-serif text-3xl text-primary hover:text-brand-gold transition-colors flex items-baseline gap-4 group" href="#kontakt">
+                        <span class="font-sans text-[10px] tracking-widest text-brand-gold">04</span>
+                        <span class="border-b border-transparent group-hover:border-brand-gold/60 pb-1 transition-all duration-300">KONTAKT</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="flex flex-col gap-4 mt-auto">
+                <a href="#kontakt" id="mobile-cta-btn" class="w-full text-center bg-brand-forest text-[#FAFAF8] py-4 font-label-caps text-xs tracking-widest hover:bg-[#1A1A18] transition-colors duration-300 block">
+                    UMÓW ROZMOWĘ
+                </a>
+                <p class="text-center text-[10px] text-on-surface-variant font-label-caps tracking-wider">© 2026 First Partners</p>
+            </div>
+        </div>
+
+        <!-- Backdrop Overlay for Mobile Menu -->
+        <div id="mobile-menu-backdrop" class="fixed inset-0 z-[90] bg-[#000000]/45 hidden md:hidden transition-opacity duration-300 opacity-0"></div>
     </nav>
 
     <!-- Hero Section -->
@@ -76,7 +120,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
             <div class="lg:col-span-5">
                 <span class="font-label-caps text-xs text-brand-gold block mb-4">JAK POMAGAMY</span>
-                <h2 class="font-serif text-3xl font-medium mb-6">Uporządkuj i wyskaluj procesy w swojej klinice</h2>
+                <h2 class="font-serif text-3xl font-medium mb-6">Uporządkuj i wyskaluj procesy in Twojej klinice</h2>
                 <p class="text-on-surface-variant leading-relaxed">
                     Wdrażamy systemy marketingowo-sprzedażowe i procesowe skrojone pod specyfikę Twojej branży. Zwiększamy rentowność, optymalizujemy lejek i automatyzujemy zadania operacyjne.
                 </p>
@@ -179,7 +223,7 @@
         </div>
     </footer>
 
-    <!-- Form Handler Script -->
+    <!-- Form Handler & Navigation Script -->
     <script>
         const form = document.getElementById('contact-form');
         form.addEventListener('submit', async (e) => {
@@ -219,6 +263,44 @@
                 submitBtn.disabled = false;
                 submitBtn.innerText = originalBtnText;
             }
+        });
+
+        // Mobile menu drawer logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+
+        function openMobileMenu() {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+            mobileMenuBackdrop.classList.remove('hidden');
+            setTimeout(() => {
+                mobileMenuBackdrop.classList.remove('opacity-0');
+                mobileMenuBackdrop.classList.add('opacity-100');
+            }, 10);
+            mobileMenuBtn.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenuBackdrop.classList.remove('opacity-100');
+            mobileMenuBackdrop.classList.add('opacity-0');
+            setTimeout(() => {
+                mobileMenuBackdrop.classList.add('hidden');
+            }, 300);
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+        mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
         });
     </script>
 </body>
