@@ -32,7 +32,6 @@
             --spacing-stack-md: 24px;
         }
     </style>
-    <script src="/assets/config.js"></script>
 </head>
 <body class="bg-brand-warm-white text-primary font-body antialiased overflow-x-hidden">
     <!-- Navigation -->
@@ -259,17 +258,13 @@
             const data = Object.fromEntries(formData.entries());
 
             try {
-                const response = await fetch('https://api.web3forms.com/submit', {
+                const response = await fetch('/api/send-email', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
                     },
-                    body: JSON.stringify({
-                        access_key: (window.FP_CONFIG && window.FP_CONFIG.web3forms_key) || "YOUR_ACCESS_KEY_HERE",
-                        subject: "Nowe zgłoszenie: " + data.service,
-                        ...data
-                    })
+                    body: JSON.stringify(data)
                 });
 
                 if (response.ok) {

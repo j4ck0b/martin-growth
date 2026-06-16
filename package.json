@@ -1,0 +1,9 @@
+{
+  "name": "first-partners-website",
+  "version": "1.0.0",
+  "description": "First Partners website with serverless contact form",
+  "main": "index.html",
+  "dependencies": {
+    "nodemailer": "^6.9.1"
+  }
+}
