@@ -27,6 +27,7 @@
     <style type="text/tailwindcss">
         @theme {
             --color-primary: #1A1C1B;
+            --color-on-primary: #ffffff;
             --color-brand-forest: #1C3A2A;
             --color-brand-gold: #B8922A;
             --color-brand-warm-white: #FAFAF8;
@@ -253,10 +254,10 @@
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 items-start">
                 
                 <!-- Stage 1: Nowy -->
-                <div class="border-[0.5px] border-outline-variant/50 bg-brand-warm-white p-4">
-                    <div class="flex justify-between items-center pb-2 mb-4 border-b border-brand-gold/30">
-                        <span class="label-caps text-[10px] text-primary">1. Nowy lead</span>
-                        <span id="badge-count-new" class="text-[10px] font-bold border border-outline px-1.5 py-0.5">0</span>
+                <div class="border-[0.5px] border-outline-variant/50 bg-surface-container-low p-4">
+                    <div class="flex justify-between items-center pb-3 mb-4 border-b-[0.5px] border-brand-gold">
+                        <span class="label-caps text-[10px] text-primary tracking-wider font-semibold">1. Nowy lead</span>
+                        <span id="badge-count-new" class="text-[10px] font-mono font-bold bg-primary text-white px-2 py-0.5">0</span>
                     </div>
                     <div class="space-y-4 min-h-[300px] transition-all" id="kanban-stage-new" ondragover="allowDrop(event)" ondrop="dropLead(event, 'new')">
                         <!-- Cards injected here -->
@@ -264,10 +265,10 @@
                 </div>
 
                 <!-- Stage 2: W kontakcie -->
-                <div class="border-[0.5px] border-outline-variant/50 bg-brand-warm-white p-4">
-                    <div class="flex justify-between items-center pb-2 mb-4 border-b border-brand-gold/30">
-                        <span class="label-caps text-[10px] text-primary">2. W kontakcie</span>
-                        <span id="badge-count-contact" class="text-[10px] font-bold border border-outline px-1.5 py-0.5">0</span>
+                <div class="border-[0.5px] border-outline-variant/50 bg-surface-container-low p-4">
+                    <div class="flex justify-between items-center pb-3 mb-4 border-b-[0.5px] border-brand-gold">
+                        <span class="label-caps text-[10px] text-primary tracking-wider font-semibold">2. W kontakcie</span>
+                        <span id="badge-count-contact" class="text-[10px] font-mono font-bold bg-primary text-white px-2 py-0.5">0</span>
                     </div>
                     <div class="space-y-4 min-h-[300px] transition-all" id="kanban-stage-contact" ondragover="allowDrop(event)" ondrop="dropLead(event, 'contact')">
                         <!-- Cards injected here -->
@@ -275,10 +276,10 @@
                 </div>
 
                 <!-- Stage 3: Oferta / Wycena -->
-                <div class="border-[0.5px] border-outline-variant/50 bg-brand-warm-white p-4">
-                    <div class="flex justify-between items-center pb-2 mb-4 border-b border-brand-gold/30">
-                        <span class="label-caps text-[10px] text-primary">3. Wycena/Oferta</span>
-                        <span id="badge-count-proposal" class="text-[10px] font-bold border border-outline px-1.5 py-0.5">0</span>
+                <div class="border-[0.5px] border-outline-variant/50 bg-surface-container-low p-4">
+                    <div class="flex justify-between items-center pb-3 mb-4 border-b-[0.5px] border-brand-gold">
+                        <span class="label-caps text-[10px] text-primary tracking-wider font-semibold">3. Wycena/Oferta</span>
+                        <span id="badge-count-proposal" class="text-[10px] font-mono font-bold bg-primary text-white px-2 py-0.5">0</span>
                     </div>
                     <div class="space-y-4 min-h-[300px] transition-all" id="kanban-stage-proposal" ondragover="allowDrop(event)" ondrop="dropLead(event, 'proposal')">
                         <!-- Cards injected here -->
@@ -286,10 +287,10 @@
                 </div>
 
                 <!-- Stage 4: Wdrożenie -->
-                <div class="border-[0.5px] border-outline-variant/50 bg-brand-warm-white p-4">
-                    <div class="flex justify-between items-center pb-2 mb-4 border-b border-brand-gold/30">
-                        <span class="label-caps text-[10px] text-primary">4. Wdrożenie</span>
-                        <span id="badge-count-onboarding" class="text-[10px] font-bold border border-outline px-1.5 py-0.5">0</span>
+                <div class="border-[0.5px] border-outline-variant/50 bg-surface-container-low p-4">
+                    <div class="flex justify-between items-center pb-3 mb-4 border-b-[0.5px] border-brand-gold">
+                        <span class="label-caps text-[10px] text-primary tracking-wider font-semibold">4. Wdrożenie</span>
+                        <span id="badge-count-onboarding" class="text-[10px] font-mono font-bold bg-primary text-white px-2 py-0.5">0</span>
                     </div>
                     <div class="space-y-4 min-h-[300px] transition-all" id="kanban-stage-onboarding" ondragover="allowDrop(event)" ondrop="dropLead(event, 'onboarding')">
                         <!-- Cards injected here -->
@@ -297,10 +298,10 @@
                 </div>
 
                 <!-- Stage 5: Zakończone -->
-                <div class="border-[0.5px] border-outline-variant/50 bg-brand-warm-white p-4">
-                    <div class="flex justify-between items-center pb-2 mb-4 border-b border-brand-gold/30">
-                        <span class="label-caps text-[10px] text-primary">5. Zakończone</span>
-                        <span id="badge-count-completed" class="text-[10px] font-bold border border-outline px-1.5 py-0.5">0</span>
+                <div class="border-[0.5px] border-outline-variant/50 bg-surface-container-low p-4">
+                    <div class="flex justify-between items-center pb-3 mb-4 border-b-[0.5px] border-brand-gold">
+                        <span class="label-caps text-[10px] text-primary tracking-wider font-semibold">5. Zakończone</span>
+                        <span id="badge-count-completed" class="text-[10px] font-mono font-bold bg-primary text-white px-2 py-0.5">0</span>
                     </div>
                     <div class="space-y-4 min-h-[300px] transition-all" id="kanban-stage-completed" ondragover="allowDrop(event)" ondrop="dropLead(event, 'completed')">
                         <!-- Cards injected here -->
@@ -335,10 +336,10 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
                 <!-- Column: Do zrobienia -->
-                <div class="border-[0.5px] border-outline-variant/60 bg-brand-warm-white p-5">
-                    <div class="flex justify-between items-center pb-2 mb-4 border-b border-brand-gold/30">
-                        <span class="label-caps text-primary">Do zrobienia</span>
-                        <span id="badge-tasks-todo" class="text-xs font-semibold px-2 py-0.5 border border-outline-variant">0</span>
+                <div class="border-[0.5px] border-outline-variant/60 bg-surface-container-low p-5">
+                    <div class="flex justify-between items-center pb-3 mb-4 border-b-[0.5px] border-brand-gold">
+                        <span class="label-caps text-primary tracking-wider font-semibold">Do zrobienia</span>
+                        <span id="badge-tasks-todo" class="text-[10px] font-mono font-bold bg-primary text-white px-2 py-0.5">0</span>
                     </div>
                     <div class="space-y-4 min-h-[400px]" id="tasks-column-todo" ondragover="allowDrop(event)" ondrop="dropTask(event, 'todo')">
                         <!-- Tasks go here -->
@@ -346,10 +347,10 @@
                 </div>
 
                 <!-- Column: W toku -->
-                <div class="border-[0.5px] border-outline-variant/60 bg-brand-warm-white p-5">
-                    <div class="flex justify-between items-center pb-2 mb-4 border-b border-brand-gold/30">
-                        <span class="label-caps text-primary">W toku</span>
-                        <span id="badge-tasks-inprogress" class="text-xs font-semibold px-2 py-0.5 border border-outline-variant">0</span>
+                <div class="border-[0.5px] border-outline-variant/60 bg-surface-container-low p-5">
+                    <div class="flex justify-between items-center pb-3 mb-4 border-b-[0.5px] border-brand-gold">
+                        <span class="label-caps text-primary tracking-wider font-semibold">W toku</span>
+                        <span id="badge-tasks-inprogress" class="text-[10px] font-mono font-bold bg-primary text-white px-2 py-0.5">0</span>
                     </div>
                     <div class="space-y-4 min-h-[400px]" id="tasks-column-in_progress" ondragover="allowDrop(event)" ondrop="dropTask(event, 'in_progress')">
                         <!-- Tasks go here -->
@@ -357,10 +358,10 @@
                 </div>
 
                 <!-- Column: Zakończone -->
-                <div class="border-[0.5px] border-outline-variant/60 bg-brand-warm-white p-5">
-                    <div class="flex justify-between items-center pb-2 mb-4 border-b border-brand-gold/30">
-                        <span class="label-caps text-primary">Zakończone</span>
-                        <span id="badge-tasks-done" class="text-xs font-semibold px-2 py-0.5 border border-outline-variant">0</span>
+                <div class="border-[0.5px] border-outline-variant/60 bg-surface-container-low p-5">
+                    <div class="flex justify-between items-center pb-3 mb-4 border-b-[0.5px] border-brand-gold">
+                        <span class="label-caps text-primary tracking-wider font-semibold">Zakończone</span>
+                        <span id="badge-tasks-done" class="text-[10px] font-mono font-bold bg-primary text-white px-2 py-0.5">0</span>
                     </div>
                     <div class="space-y-4 min-h-[400px]" id="tasks-column-done" ondragover="allowDrop(event)" ondrop="dropTask(event, 'done')">
                         <!-- Tasks go here -->
@@ -472,6 +473,86 @@
             </div>
         </section>
 
+        <!-- ================= DATABASE SETUP REQUIRED SCREEN ================= -->
+        <section id="tab-db-setup" class="tab-content hidden">
+            <div class="max-w-2xl mx-auto my-12 border-[0.5px] border-outline-variant p-8 bg-brand-warm-white text-center">
+                <span class="material-symbols-outlined text-red-600 text-5xl mb-4">database_alert</span>
+                <h1 class="font-serif text-3xl font-medium text-primary mb-3">Wymagana konfiguracja bazy danych</h1>
+                <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                    Połączenie z Supabase zostało ustanowione, ale w projekcie brakuje wymaganych tabel (<code class="bg-surface-container-low px-1.5 py-0.5 rounded text-red-700">leads</code>, <code class="bg-surface-container-low px-1.5 py-0.5 rounded text-red-700">tasks</code>, <code class="bg-surface-container-low px-1.5 py-0.5 rounded text-red-700">activities</code>).
+                    Uruchom poniższy skrypt SQL w zakładce <strong>SQL Editor</strong> w panelu Supabase, aby utworzyć tabele i nadać uprawnienia.
+                </p>
+                
+                <div class="text-left mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="label-caps text-[10px] text-on-surface-variant">Skrypt SQL inicjalizacyjny</span>
+                        <button type="button" onclick="copySqlSchema()" class="bg-brand-forest text-on-primary label-caps text-[9px] px-3 py-1.5 hover:bg-black transition-colors cursor-pointer">
+                            Skopiuj skrypt SQL
+                        </button>
+                    </div>
+                    <pre class="bg-black text-[#e5e2de] p-4 text-[10px] overflow-auto max-h-[200px] font-mono select-all" id="setup-sql-schema-code">
+-- Utwórz Tabelę Leadów/Klientów
+CREATE TABLE IF NOT EXISTS public.leads (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    name TEXT NOT NULL,
+    contact_person TEXT,
+    email TEXT,
+    phone TEXT,
+    deal_value NUMERIC DEFAULT 0,
+    stage TEXT NOT NULL DEFAULT 'new',
+    notes TEXT,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+-- Utwórz Tabelę Zadań
+CREATE TABLE IF NOT EXISTS public.tasks (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    title TEXT NOT NULL,
+    description TEXT,
+    status TEXT NOT NULL DEFAULT 'todo',
+    priority TEXT NOT NULL DEFAULT 'medium',
+    assignee TEXT,
+    due_date DATE,
+    lead_id UUID REFERENCES public.leads(id) ON DELETE SET NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+-- Utwórz Tabelę Aktywności
+CREATE TABLE IF NOT EXISTS public.activities (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    content TEXT NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+-- Włącz Row Level Security (RLS)
+ALTER TABLE public.leads ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.tasks ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.activities ENABLE ROW LEVEL SECURITY;
+
+-- Utwórz polityki dostępu publicznego (anon)
+CREATE POLICY "Allow public read" ON public.leads FOR SELECT USING (true);
+CREATE POLICY "Allow public insert" ON public.leads FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update" ON public.leads FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete" ON public.leads FOR DELETE USING (true);
+
+CREATE POLICY "Allow public read" ON public.tasks FOR SELECT USING (true);
+CREATE POLICY "Allow public insert" ON public.tasks FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update" ON public.tasks FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete" ON public.tasks FOR DELETE USING (true);
+
+CREATE POLICY "Allow public read" ON public.activities FOR SELECT USING (true);
+CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update" ON public.activities FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete" ON public.activities FOR DELETE USING (true);
+                    </pre>
+                </div>
+                
+                <button type="button" onclick="startEngine()" class="border border-primary text-primary label-caps text-[11px] px-6 py-3 hover:bg-primary hover:text-white transition-colors cursor-pointer">
+                    Sprawdź ponownie połączenie
+                </button>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -485,7 +566,7 @@
     <!-- ================================= MODALS & DRAWERS ================================= -->
 
     <!-- Settings Modal -->
-    <div id="settings-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-primary/40 backdrop-blur-[1px]">
+    <div id="settings-modal" class="fixed inset-0 z-[60] hidden flex items-center justify-center bg-primary/40 backdrop-blur-[1px]">
         <div class="bg-brand-warm-white border-[0.5px] border-outline-variant max-w-2xl w-full p-8 relative mx-4">
             <button onclick="closeSettingsModal()" class="absolute top-6 right-6 text-primary hover:text-brand-gold transition-colors cursor-pointer">
                 <span class="material-symbols-outlined text-xl">close</span>
@@ -745,6 +826,18 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                 <p class="label-caps text-[9px] text-brand-gold mt-1 text-center">Zaloguj się do swojego konta</p>
             </div>
 
+            <!-- Connection Error Banner -->
+            <div id="login-connection-error" class="hidden mb-6 p-4 border border-red-200 bg-red-50 text-red-900 text-xs">
+                <div class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-red-600 text-sm mt-0.5">warning</span>
+                    <div>
+                        <strong class="font-semibold block text-red-950">Brak połączenia z bazą danych</strong>
+                        <span id="login-connection-error-text" class="text-red-800">Supabase URL i/lub Anon Key nie są skonfigurowane lub są nieprawidłowe.</span>
+                        <button type="button" onclick="openSettingsModal()" class="mt-2 text-brand-gold hover:text-brand-forest underline font-bold uppercase tracking-wider block text-[10px] cursor-pointer">Skonfiguruj połączenie</button>
+                    </div>
+                </div>
+            </div>
+
             <form id="login-form" onsubmit="handleLoginSubmit(event)" class="space-y-6">
                 <div>
                     <label class="label-caps text-[10px] text-on-surface-variant block mb-1">E-mail służbowy</label>
@@ -779,47 +872,18 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
         let supabaseKey = localStorage.getItem('fp_supabase_key') || DEFAULT_SUPABASE_KEY;
         
         let client = null;
-        let dbState = 'loading'; // 'loading', 'connected', 'needs_tables', 'local'
+        let dbState = 'loading'; // 'loading', 'connected', 'needs_tables', 'connection_error'
+        let authSubscription = null;
         
-        // Application State (fallback storage / local memory cache)
+        // Application State
         let leads = [];
         let tasks = [];
         let activities = [];
-
-        // Initial Demo Data
-        const DEMO_LEADS = [
-            { id: "lead-1", name: "Gabinety Dentystyczne DentArt", contact_person: "Marek Kowalski", email: "m.kowalski@dentart.pl", phone: "+48 501 202 303", deal_value: 35000, stage: "new", notes: "Zainteresowani audytem operacyjnym i wdrożeniem CRM Hubspot. Zgłoszenie przez formularz.", created_at: new Date(Date.now() - 2 * 86400000).toISOString() },
-            { id: "lead-2", name: "Klinika Fizjoterapii RehaPro", contact_person: "Karolina Nowak", email: "biuro@rehapro.pl", phone: "+48 600 700 800", deal_value: 48000, stage: "contact", notes: "Po pierwszej rozmowie. Anna Nowak wysłała materiały o partnerstwie operacyjnym. Czekamy na termin spotkania.", created_at: new Date(Date.now() - 4 * 86400000).toISOString() },
-            { id: "lead-3", name: "Butikowe Biuro Nieruchomości Vesta", contact_person: "Piotr Wiśniewski", email: "p.wisniewski@vesta-premium.pl", phone: "+48 700 100 200", deal_value: 85000, stage: "proposal", notes: "Wysłano ofertę na wdrożenie Growth System i automatyzację lejka lead-generation. Klient negocjuje warunki płatności.", created_at: new Date(Date.now() - 7 * 86400000).toISOString() },
-            { id: "lead-4", name: "Deweloper Boutique Prestige", contact_person: "Tomasz Zieliński", email: "t.zielinski@boutiqueprestige.pl", phone: "+48 888 777 666", deal_value: 120000, stage: "onboarding", notes: "Umowa podpisana. Rozpoczęto analizę procesów operacyjnych i wywiad z pracownikami. Piotr Kowalski prowadzi onboarding.", created_at: new Date(Date.now() - 14 * 86400000).toISOString() },
-            { id: "lead-5", name: "Prywatna Szkoła Anglojęzyczna Bright", contact_person: "Helena Górska", email: "h.gorska@brightschool.edu.pl", phone: "+48 555 444 333", deal_value: 62000, stage: "completed", notes: "Wdrożenie systemu zapisów i CRM zakończone sukcesem. Efektywność operacyjna wzrosła o 40%.", created_at: new Date(Date.now() - 30 * 86400000).toISOString() }
-        ];
-
-        const DEMO_TASKS = [
-            { id: "task-1", title: "Przygotowanie oferty cenowej", description: "Opracować końcowy budżet wdrożenia systemu i automatyzacji dla Vesta.", status: "todo", priority: "high", assignee: "Jacob Moore", due_date: new Date(Date.now() + 2 * 86400000).toISOString().split('T')[0], lead_id: "lead-3", created_at: new Date().toISOString() },
-            { id: "task-2", title: "Mapowanie procesów obsługi klienta", description: "Zidentyfikować wąskie gardła w procesie sprzedaży u dewelopera Boutique Prestige.", status: "in_progress", priority: "medium", assignee: "Piotr Kowalski", due_date: new Date(Date.now() + 4 * 86400000).toISOString().split('T')[0], lead_id: "lead-4", created_at: new Date().toISOString() },
-            { id: "task-3", title: "Telefon po materiałach", description: "Zadzwonić do Karoliny z RehaPro, aby umówić termin spotkania z Jacobem.", status: "in_progress", priority: "low", assignee: "Anna Nowak", due_date: new Date().toISOString().split('T')[0], lead_id: "lead-2", created_at: new Date().toISOString() }
-        ];
-
-        const DEMO_ACTIVITIES = [
-            { id: "act-1", content: "Dodano nowego leada: DentArt", created_at: new Date(Date.now() - 2 * 3600000).toISOString() },
-            { id: "act-2", content: "Anna Nowak zmieniła status leada RehaPro na 'W kontakcie'", created_at: new Date(Date.now() - 5 * 3600000).toISOString() },
-            { id: "act-3", content: "Utworzono zadanie 'Mapowanie procesów obsługi klienta' dla Piotr Kowalski", created_at: new Date(Date.now() - 12 * 3600000).toISOString() }
-        ];
 
         // Bootstrapping the application
         window.addEventListener('DOMContentLoaded', async () => {
             initInputs();
             await startEngine();
-            
-            // Listen for auth state changes
-            if (client) {
-                client.auth.onAuthStateChange(async (event, session) => {
-                    if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
-                        await startEngine();
-                    }
-                });
-            }
         });
 
         // Setup settings forms values
@@ -829,23 +893,26 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
         }
 
         async function checkAuthState() {
-            if (!client || dbState === 'local') {
-                showLoginOverlay(false);
+            if (!client) {
+                showLoginOverlay(true);
+                showLoginConnectionError(true, "Brak skonfigurowanego połączenia z bazą danych Supabase.");
                 document.getElementById('user-email-display').classList.add('hidden');
                 document.getElementById('logout-btn').classList.add('hidden');
-                return true; // Bypass auth in local trial mode
+                return false;
             }
 
             try {
                 const { data: { session } } = await client.auth.getSession();
                 if (session) {
                     showLoginOverlay(false);
+                    showLoginConnectionError(false);
                     document.getElementById('user-email-display').textContent = session.user.email;
                     document.getElementById('user-email-display').classList.remove('hidden');
                     document.getElementById('logout-btn').classList.remove('hidden');
                     return true;
                 } else {
                     showLoginOverlay(true);
+                    showLoginConnectionError(false);
                     document.getElementById('user-email-display').classList.add('hidden');
                     document.getElementById('logout-btn').classList.add('hidden');
                     return false;
@@ -853,7 +920,31 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
             } catch (e) {
                 console.error("Auth check failed:", e);
                 showLoginOverlay(true);
+                showLoginConnectionError(true, "Błąd autoryzacji: " + e.message);
                 return false;
+            }
+        }
+
+        function showLoginConnectionError(show, message = '') {
+            const banner = document.getElementById('login-connection-error');
+            const errorText = document.getElementById('login-connection-error-text');
+            const emailInput = document.getElementById('login-email');
+            const passwordInput = document.getElementById('login-password');
+            const submitBtn = document.getElementById('login-submit-btn');
+
+            if (show) {
+                banner.classList.remove('hidden');
+                errorText.textContent = message;
+                emailInput.disabled = true;
+                passwordInput.disabled = true;
+                submitBtn.disabled = true;
+                submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                banner.classList.add('hidden');
+                emailInput.disabled = false;
+                passwordInput.disabled = false;
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
             }
         }
 
@@ -907,6 +998,18 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                 try {
                     client = supabase.createClient(supabaseUrl, supabaseKey);
                     
+                    // Bind auth state listener
+                    if (authSubscription) {
+                        authSubscription.unsubscribe();
+                        authSubscription = null;
+                    }
+                    const { data: { subscription } } = client.auth.onAuthStateChange(async (event, session) => {
+                        if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
+                            await startEngine();
+                        }
+                    });
+                    authSubscription = subscription;
+
                     // Verify authentication state first
                     const isUserLoggedIn = await checkAuthState();
                     if (!isUserLoggedIn) {
@@ -923,7 +1026,7 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                         if (error.code === 'PGRST205') {
                             dbState = 'needs_tables';
                             showDbWarningBanner(true);
-                            loadLocalStorageData();
+                            switchTab('db-setup');
                         } else {
                             throw error;
                         }
@@ -931,27 +1034,35 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                         dbState = 'connected';
                         showDbWarningBanner(false);
                         await fetchAllFromSupabase();
+                        // If we were on db-setup, go back to dashboard
+                        const activeTab = document.querySelector('.tab-content:not(.hidden)');
+                        if (!activeTab || activeTab.id === 'tab-db-setup') {
+                            switchTab('pulpit');
+                        }
                     }
                 } catch (e) {
                     console.error("Supabase connection error:", e);
-                    dbState = 'local';
+                    dbState = 'connection_error';
                     showDbWarningBanner(false);
-                    loadLocalStorageData();
-                    showLoginOverlay(false); // bypass auth in local fallback
+                    client = null;
+                    await checkAuthState();
                 }
             } else {
-                dbState = 'local';
+                dbState = 'connection_error';
                 showDbWarningBanner(false);
-                loadLocalStorageData();
-                showLoginOverlay(false); // bypass auth in local fallback
+                client = null;
+                await checkAuthState();
             }
 
             updateStatusBadge();
-            renderDashboard();
-            renderLeads();
-            renderTasks();
-            renderTeamTab();
-            populateLeadDropdown();
+            
+            if (dbState === 'connected') {
+                renderDashboard();
+                renderLeads();
+                renderTasks();
+                renderTeamTab();
+                populateLeadDropdown();
+            }
         }
 
         function showDbWarningBanner(show) {
@@ -974,42 +1085,9 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
             } else if (dbState === 'needs_tables') {
                 content = `<span class="w-1.5 h-1.5 bg-red-500 inline-block animate-pulse"></span> <span class="text-red-900 font-bold text-[10px]">Brak Tabel SQL</span>`;
             } else {
-                content = `<span class="w-1.5 h-1.5 bg-gray-500 inline-block"></span> <span class="text-gray-700 text-[10px]">Tryb Lokalny (Offline)</span>`;
+                content = `<span class="w-1.5 h-1.5 bg-red-500 inline-block"></span> <span class="text-red-700 text-[10px] font-bold">Błąd Połączenia</span>`;
             }
             badge.innerHTML = content;
-        }
-
-        // ================= LOCAL STORAGE BACKUP =================
-        function loadLocalStorageData() {
-            const savedLeads = localStorage.getItem('fp_leads');
-            const savedTasks = localStorage.getItem('fp_tasks');
-            const savedActivities = localStorage.getItem('fp_activities');
-
-            if (savedLeads) leads = JSON.parse(savedLeads);
-            else {
-                leads = [...DEMO_LEADS];
-                localStorage.setItem('fp_leads', JSON.stringify(leads));
-            }
-
-            if (savedTasks) tasks = JSON.parse(savedTasks);
-            else {
-                tasks = [...DEMO_TASKS];
-                localStorage.setItem('fp_tasks', JSON.stringify(tasks));
-            }
-
-            if (savedActivities) activities = JSON.parse(savedActivities);
-            else {
-                activities = [...DEMO_ACTIVITIES];
-                localStorage.setItem('fp_activities', JSON.stringify(activities));
-            }
-        }
-
-        function saveLocalState() {
-            if (dbState === 'local' || dbState === 'needs_tables') {
-                localStorage.setItem('fp_leads', JSON.stringify(leads));
-                localStorage.setItem('fp_tasks', JSON.stringify(tasks));
-                localStorage.setItem('fp_activities', JSON.stringify(activities));
-            }
         }
 
         // ================= SUPABASE DATA FETCHING =================
@@ -1031,32 +1109,25 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                 activities = dbActs || [];
             } catch (e) {
                 console.error("Error reading data from Supabase:", e);
-                dbState = 'local';
+                dbState = 'connection_error';
                 updateStatusBadge();
-                loadLocalStorageData();
             }
         }
 
         // ================= ACTIVITY LOGGER =================
         async function logActivity(text) {
-            const newAct = {
-                id: crypto.randomUUID ? crypto.randomUUID() : 'act-' + Date.now(),
-                content: text,
-                created_at: new Date().toISOString()
-            };
-
-            activities.unshift(newAct);
-            if (activities.length > 50) activities.pop();
-
-            saveLocalState();
-            renderDashboard();
-
             if (dbState === 'connected') {
                 try {
-                    await client.from('activities').insert({
-                        content: newAct.content,
-                        created_at: newAct.created_at
-                    });
+                    const newAct = {
+                        content: text,
+                        created_at: new Date().toISOString()
+                    };
+                    await client.from('activities').insert(newAct);
+                    const { data: dbActs, error: actsErr } = await client.from('activities').select('*').order('created_at', { ascending: false }).limit(20);
+                    if (!actsErr && dbActs) {
+                        activities = dbActs;
+                        renderDashboard();
+                    }
                 } catch (e) {
                     console.error("Activity insert failed:", e);
                 }
@@ -1064,18 +1135,17 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
         }
 
         async function clearActivityLog() {
-            activities = [];
-            saveLocalState();
-            renderDashboard();
-
             if (dbState === 'connected') {
                 try {
                     await client.from('activities').delete().neq('id', '00000000-0000-0000-0000-000000000000');
+                    activities = [];
+                    renderDashboard();
+                    await logActivity("Menedżer wyczyścił rejestr zdarzeń.");
                 } catch(e) {
                     console.error(e);
+                    alert("Błąd czyszczenia rejestru: " + e.message);
                 }
             }
-            logActivity("Menedżer wyczyścił rejestr zdarzeń.");
         }
 
         // ================= OPERATIONS & MUTATIONS =================
@@ -1087,29 +1157,16 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                     if (leadData.id) {
                         const { error } = await client.from('leads').update(leadData).eq('id', leadData.id);
                         if (error) throw error;
-                        logActivity(`Zaktualizowano dane klienta: ${leadData.name}`);
+                        await logActivity(`Zaktualizowano dane klienta: ${leadData.name}`);
                     } else {
                         const { error } = await client.from('leads').insert(leadData);
                         if (error) throw error;
-                        logActivity(`Dodano nowego leada: ${leadData.name}`);
+                        await logActivity(`Dodano nowego leada: ${leadData.name}`);
                     }
                     await fetchAllFromSupabase();
                 } catch (e) {
                     alert("Błąd zapisu do Supabase. Spróbuj ponownie. " + e.message);
                 }
-            } else {
-                // Local state management
-                if (leadData.id) {
-                    const idx = leads.findIndex(l => l.id === leadData.id);
-                    if (idx !== -1) leads[idx] = { ...leads[idx], ...leadData };
-                    logActivity(`Zaktualizowano dane klienta (Lokalnie): ${leadData.name}`);
-                } else {
-                    leadData.id = 'lead-' + Date.now();
-                    leadData.created_at = new Date().toISOString();
-                    leads.unshift(leadData);
-                    logActivity(`Dodano nowego leada (Lokalnie): ${leadData.name}`);
-                }
-                saveLocalState();
             }
 
             renderDashboard();
@@ -1126,15 +1183,11 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                 try {
                     const { error } = await client.from('leads').delete().eq('id', id);
                     if (error) throw error;
-                    logActivity(`Usunięto klienta/leada: ${lead.name}`);
+                    await logActivity(`Usunięto klienta/leada: ${lead.name}`);
                     await fetchAllFromSupabase();
                 } catch (e) {
                     alert("Błąd usuwania w Supabase: " + e.message);
                 }
-            } else {
-                leads = leads.filter(l => l.id !== id);
-                logActivity(`Usunięto klienta (Lokalnie): ${lead.name}`);
-                saveLocalState();
             }
 
             renderDashboard();
@@ -1153,15 +1206,13 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                 try {
                     const { error } = await client.from('leads').update({ stage: newStage }).eq('id', id);
                     if (error) throw error;
-                    logActivity(`Zmieniono etap ${lead.name}: ${oldStage} → ${newStage}`);
+                    await logActivity(`Zmieniono etap ${lead.name}: ${oldStage} → ${newStage}`);
                     await fetchAllFromSupabase();
                 } catch (e) {
                     console.error(e);
                     lead.stage = oldStage; // rollback
+                    alert("Błąd aktualizacji etapu: " + e.message);
                 }
-            } else {
-                logActivity(`Zmieniono etap ${lead.name}: ${oldStage} → ${newStage}`);
-                saveLocalState();
             }
             renderDashboard();
             renderLeads();
@@ -1174,28 +1225,16 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                     if (taskData.id) {
                         const { error } = await client.from('tasks').update(taskData).eq('id', taskData.id);
                         if (error) throw error;
-                        logActivity(`Zaktualizowano zadanie: ${taskData.title}`);
+                        await logActivity(`Zaktualizowano zadanie: ${taskData.title}`);
                     } else {
                         const { error } = await client.from('tasks').insert(taskData);
                         if (error) throw error;
-                        logActivity(`Wyznaczono nowe zadanie: ${taskData.title} → ${taskData.assignee || 'Nieprzypisane'}`);
+                        await logActivity(`Wyznaczono nowe zadanie: ${taskData.title} → ${taskData.assignee || 'Nieprzypisane'}`);
                     }
                     await fetchAllFromSupabase();
                 } catch (e) {
                     alert("Błąd zapisu zadania w Supabase: " + e.message);
                 }
-            } else {
-                if (taskData.id) {
-                    const idx = tasks.findIndex(t => t.id === taskData.id);
-                    if (idx !== -1) tasks[idx] = { ...tasks[idx], ...taskData };
-                    logActivity(`Zaktualizowano zadanie: ${taskData.title}`);
-                } else {
-                    taskData.id = 'task-' + Date.now();
-                    taskData.created_at = new Date().toISOString();
-                    tasks.unshift(taskData);
-                    logActivity(`Wyznaczono nowe zadanie (Lokalnie): ${taskData.title}`);
-                }
-                saveLocalState();
             }
 
             renderDashboard();
@@ -1211,15 +1250,11 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                 try {
                     const { error } = await client.from('tasks').delete().eq('id', id);
                     if (error) throw error;
-                    logActivity(`Usunięto zadanie: ${task.title}`);
+                    await logActivity(`Usunięto zadanie: ${task.title}`);
                     await fetchAllFromSupabase();
                 } catch (e) {
                     alert("Błąd podczas usuwania zadania: " + e.message);
                 }
-            } else {
-                tasks = tasks.filter(t => t.id !== id);
-                logActivity(`Usunięto zadanie (Lokalnie): ${task.title}`);
-                saveLocalState();
             }
 
             renderDashboard();
@@ -1237,15 +1272,13 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                 try {
                     const { error } = await client.from('tasks').update({ status: newStatus }).eq('id', id);
                     if (error) throw error;
-                    logActivity(`Zadanie '${task.title}': ${oldStatus} → ${newStatus}`);
+                    await logActivity(`Zadanie '${task.title}': ${oldStatus} → ${newStatus}`);
                     await fetchAllFromSupabase();
                 } catch (e) {
                     console.error(e);
                     task.status = oldStatus;
+                    alert("Błąd aktualizacji statusu zadania: " + e.message);
                 }
-            } else {
-                logActivity(`Zadanie '${task.title}': ${oldStatus} → ${newStatus}`);
-                saveLocalState();
             }
             renderDashboard();
             renderTasks();
@@ -1351,21 +1384,24 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                     const undoneTasks = clientTasks.filter(t => t.status !== 'done').length;
                     
                     const card = document.createElement('div');
-                    card.className = "border-[0.5px] border-outline-variant p-4 bg-brand-warm-white hover:border-brand-gold transition-colors cursor-pointer";
+                    card.className = "border-[0.5px] border-outline-variant p-3.5 bg-white hover:border-brand-gold transition-colors cursor-pointer";
                     card.draggable = true;
                     card.ondragstart = (e) => e.dataTransfer.setData("text/plain", l.id);
                     card.onclick = () => openEditLeadModal(l.id);
                     
                     card.innerHTML = `
-                        <div class="flex justify-between items-start gap-2 mb-2">
-                            <h4 class="font-serif text-base font-medium text-primary line-clamp-2">${escapeHtml(l.name)}</h4>
+                        <div class="mb-2">
+                            <h4 class="font-serif text-base font-semibold text-primary leading-snug line-clamp-2">${escapeHtml(l.name)}</h4>
                         </div>
-                        <div class="text-xs text-on-surface-variant mb-3 font-semibold">${escapeHtml(l.contact_person || 'Bez kontaktu')}</div>
+                        <div class="flex items-center gap-1.5 text-xs text-on-surface-variant mb-3">
+                            <span class="material-symbols-outlined text-[14px] text-on-surface-variant/70">person</span>
+                            <span class="truncate font-medium">${escapeHtml(l.contact_person || 'Bez kontaktu')}</span>
+                        </div>
                         
-                        <div class="flex justify-between items-center border-t border-outline-variant/20 pt-3">
-                            <span class="font-serif text-sm font-semibold">${formatPLN(l.deal_value)}</span>
+                        <div class="flex justify-between items-center border-t-[0.5px] border-outline-variant/30 pt-2.5 mt-1">
+                            <span class="font-serif text-sm font-bold text-brand-forest">${formatPLN(l.deal_value)}</span>
                             ${undoneTasks > 0 ? `
-                                <span class="flex items-center gap-1 text-[10px] label-caps text-brand-gold font-bold">
+                                <span class="flex items-center gap-1 text-[10px] label-caps text-brand-gold font-bold bg-amber-50 px-1.5 py-0.5 border border-amber-200">
                                     <span class="material-symbols-outlined text-[12px] fill-current">assignment</span>
                                     ${undoneTasks}
                                 </span>
@@ -1420,7 +1456,7 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                     const priorityText = t.priority === 'high' ? 'Wysoki' : (t.priority === 'medium' ? 'Średni' : 'Niski');
 
                     const card = document.createElement('div');
-                    card.className = "border-[0.5px] border-outline-variant p-4 bg-brand-warm-white hover:border-brand-gold transition-colors cursor-pointer";
+                    card.className = "border-[0.5px] border-outline-variant p-3.5 bg-white hover:border-brand-gold transition-colors cursor-pointer";
                     card.draggable = true;
                     card.ondragstart = (e) => e.dataTransfer.setData("text/plain", t.id);
                     card.onclick = () => openEditTaskModal(t.id);
@@ -1428,15 +1464,15 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                     card.innerHTML = `
                         <div class="flex justify-between items-start gap-2 mb-2">
                             <span class="${priorityClass}">${priorityText}</span>
-                            ${t.due_date ? `<span class="text-[10px] text-on-surface-variant font-semibold">${t.due_date}</span>` : ''}
+                            ${t.due_date ? `<span class="text-[10px] text-on-surface-variant font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span>${t.due_date}</span>` : ''}
                         </div>
-                        <h4 class="font-serif text-base font-semibold text-primary mb-1">${escapeHtml(t.title)}</h4>
-                        ${t.description ? `<p class="text-xs text-on-surface-variant line-clamp-2 mb-3">${escapeHtml(t.description)}</p>` : ''}
+                        <h4 class="font-serif text-base font-semibold text-primary mb-1 leading-snug">${escapeHtml(t.title)}</h4>
+                        ${t.description ? `<p class="text-xs text-on-surface-variant line-clamp-2 mb-3 leading-relaxed">${escapeHtml(t.description)}</p>` : ''}
                         
-                        <div class="flex justify-between items-center border-t border-outline-variant/20 pt-3">
-                            <span class="text-xs text-on-surface-variant italic font-medium">${clientName ? escapeHtml(clientName) : 'Ogólne'}</span>
+                        <div class="flex justify-between items-center border-t-[0.5px] border-outline-variant/30 pt-2.5 mt-1">
+                            <span class="text-xs text-on-surface-variant italic font-semibold truncate max-w-[120px]">${clientName ? escapeHtml(clientName) : 'Zadanie ogólne'}</span>
                             <div class="flex items-center gap-1.5">
-                                <span class="h-6 w-6 rounded-full border border-brand-forest/30 flex items-center justify-center bg-brand-forest/5 text-[9px] font-bold text-brand-forest uppercase">
+                                <span class="h-6 w-6 rounded-none border border-brand-forest/30 flex items-center justify-center bg-brand-forest/5 text-[9px] font-bold text-brand-forest uppercase" title="${escapeHtml(t.assignee || 'Nieprzypisane')}">
                                     ${t.assignee ? t.assignee.split(' ').map(n=>n[0]).join('') : '??'}
                                 </span>
                             </div>
@@ -1512,6 +1548,10 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
 
         // 1. General Switch Tab
         function switchTab(tabId) {
+            if (dbState === 'needs_tables') {
+                tabId = 'db-setup';
+            }
+
             // Hide all tab contents
             document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
             document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('block'));
@@ -1528,8 +1568,10 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
 
             // Activate nav button
             const activeBtn = document.getElementById(`tab-btn-${tabId}`);
-            activeBtn.classList.remove('border-transparent', 'text-on-surface-variant');
-            activeBtn.classList.add('border-brand-gold', 'text-primary');
+            if (activeBtn) {
+                activeBtn.classList.remove('border-transparent', 'text-on-surface-variant');
+                activeBtn.classList.add('border-brand-gold', 'text-primary');
+            }
         }
 
         // 2. Settings Modal
