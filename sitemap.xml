@@ -98,6 +98,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Internal -->
+  <url>
+    <loc>https://firstpartners.pl/crm</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
   <!-- Legal -->
   <url>
     <loc>https://firstpartners.pl/polityka-prywatnosci</loc>
