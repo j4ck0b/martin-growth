@@ -119,6 +119,8 @@
 
             <!-- Database Status Indicator and Settings Trigger -->
             <div class="flex items-center gap-4">
+                <span id="user-email-display" class="hidden md:inline text-[11px] text-on-surface-variant font-semibold"></span>
+                <button onclick="handleLogout()" id="logout-btn" class="hidden text-red-700 hover:text-red-950 text-xs label-caps border border-red-200 hover:border-red-950 px-3 py-1 cursor-pointer">Wyloguj</button>
                 <div id="status-badge" class="flex items-center gap-1.5 px-3 py-1 border border-outline-variant/50 text-[10px] uppercase tracking-wider font-semibold">
                     <span class="w-1.5 h-1.5 bg-yellow-600 inline-block animate-pulse"></span>
                     <span>Inicjalizacja...</span>
@@ -731,6 +733,42 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
     </div>
 
 
+    <!-- Login Overlay -->
+    <div id="login-overlay" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-brand-warm-white">
+        <div class="max-w-md w-full px-8 py-12 border-[0.5px] border-outline-variant bg-brand-warm-white mx-4 relative">
+            <div class="flex flex-col items-center mb-8">
+                <svg class="h-10 w-10 text-primary mb-3" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="32" height="32" fill="transparent" />
+                  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Playfair Display, serif" font-size="20" font-weight="600" fill="currentColor">FP</text>
+                </svg>
+                <h2 class="font-serif text-2xl text-primary font-medium text-center">Panel Operacyjny FP</h2>
+                <p class="label-caps text-[9px] text-brand-gold mt-1 text-center">Zaloguj się do swojego konta</p>
+            </div>
+
+            <form id="login-form" onsubmit="handleLoginSubmit(event)" class="space-y-6">
+                <div>
+                    <label class="label-caps text-[10px] text-on-surface-variant block mb-1">E-mail służbowy</label>
+                    <input type="email" id="login-email" class="paper-input" required placeholder="np. piotr@firstpartners.pl" />
+                </div>
+                <div>
+                    <label class="label-caps text-[10px] text-on-surface-variant block mb-1">Hasło</label>
+                    <input type="password" id="login-password" class="paper-input" required placeholder="••••••••" />
+                </div>
+                <div id="login-error-msg" class="text-xs text-red-700 hidden italic"></div>
+                
+                <div>
+                    <button type="submit" id="login-submit-btn" class="w-full bg-brand-forest text-on-primary label-caps text-[11px] py-4 tracking-widest hover:bg-black transition-colors rounded-none cursor-pointer">
+                        ZALOGUJ SIĘ
+                    </button>
+                </div>
+            </form>
+            
+            <div class="mt-8 pt-6 border-t border-outline-variant/20 text-center">
+                <a href="/" class="text-[10px] label-caps text-on-surface-variant hover:text-brand-gold transition-colors">← Powrót do strony głównej</a>
+            </div>
+        </div>
+    </div>
+
     <!-- ================================= JAVASCRIPT STATE ENGINE ================================= -->
     <script>
         // Supabase credentials configuration
@@ -773,12 +811,92 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
         window.addEventListener('DOMContentLoaded', async () => {
             initInputs();
             await startEngine();
+            
+            // Listen for auth state changes
+            if (client) {
+                client.auth.onAuthStateChange(async (event, session) => {
+                    if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
+                        await startEngine();
+                    }
+                });
+            }
         });
 
         // Setup settings forms values
         function initInputs() {
             document.getElementById('setting-supabase-url').value = supabaseUrl;
             document.getElementById('setting-supabase-key').value = supabaseKey;
+        }
+
+        async function checkAuthState() {
+            if (!client || dbState === 'local') {
+                showLoginOverlay(false);
+                document.getElementById('user-email-display').classList.add('hidden');
+                document.getElementById('logout-btn').classList.add('hidden');
+                return true; // Bypass auth in local trial mode
+            }
+
+            try {
+                const { data: { session } } = await client.auth.getSession();
+                if (session) {
+                    showLoginOverlay(false);
+                    document.getElementById('user-email-display').textContent = session.user.email;
+                    document.getElementById('user-email-display').classList.remove('hidden');
+                    document.getElementById('logout-btn').classList.remove('hidden');
+                    return true;
+                } else {
+                    showLoginOverlay(true);
+                    document.getElementById('user-email-display').classList.add('hidden');
+                    document.getElementById('logout-btn').classList.add('hidden');
+                    return false;
+                }
+            } catch (e) {
+                console.error("Auth check failed:", e);
+                showLoginOverlay(true);
+                return false;
+            }
+        }
+
+        function showLoginOverlay(show) {
+            const overlay = document.getElementById('login-overlay');
+            if (show) {
+                overlay.classList.remove('hidden');
+            } else {
+                overlay.classList.add('hidden');
+            }
+        }
+
+        async function handleLoginSubmit(e) {
+            e.preventDefault();
+            const email = document.getElementById('login-email').value.trim();
+            const password = document.getElementById('login-password').value;
+            const errorMsg = document.getElementById('login-error-msg');
+            const submitBtn = document.getElementById('login-submit-btn');
+
+            errorMsg.classList.add('hidden');
+            submitBtn.disabled = true;
+            submitBtn.textContent = "LOGOWANIE...";
+
+            try {
+                const { data, error } = await client.auth.signInWithPassword({ email, password });
+                if (error) throw error;
+                
+                await startEngine();
+            } catch (err) {
+                console.error("Login failed:", err);
+                errorMsg.textContent = "Błąd logowania: " + (err.message || "Nieprawidłowe dane.");
+                errorMsg.classList.remove('hidden');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "ZALOGUJ SIĘ";
+            }
+        }
+
+        async function handleLogout() {
+            if (client) {
+                await client.auth.signOut();
+            }
+            await startEngine();
         }
 
         async function startEngine() {
@@ -788,6 +906,14 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
             if (supabaseUrl && supabaseKey) {
                 try {
                     client = supabase.createClient(supabaseUrl, supabaseKey);
+                    
+                    // Verify authentication state first
+                    const isUserLoggedIn = await checkAuthState();
+                    if (!isUserLoggedIn) {
+                        dbState = 'connected';
+                        updateStatusBadge();
+                        return; // Stop execution until user logs in
+                    }
                     
                     // Test if we can read from leads
                     const { data, error } = await client.from('leads').select('id', { count: 'exact', head: true });
@@ -811,11 +937,13 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
                     dbState = 'local';
                     showDbWarningBanner(false);
                     loadLocalStorageData();
+                    showLoginOverlay(false); // bypass auth in local fallback
                 }
             } else {
                 dbState = 'local';
                 showDbWarningBanner(false);
                 loadLocalStorageData();
+                showLoginOverlay(false); // bypass auth in local fallback
             }
 
             updateStatusBadge();
