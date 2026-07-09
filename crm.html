@@ -547,7 +547,7 @@ CREATE POLICY "Allow public delete" ON public.activities FOR DELETE USING (true)
                     </pre>
                 </div>
                 
-                <button type="button" onclick="startEngine()" class="border border-primary text-primary label-caps text-[11px] px-6 py-3 hover:bg-primary hover:text-white transition-colors cursor-pointer">
+                <button type="button" onclick="startEngine(true)" class="border border-primary text-primary label-caps text-[11px] px-6 py-3 hover:bg-primary hover:text-white transition-colors cursor-pointer">
                     Sprawdź ponownie połączenie
                 </button>
             </div>
@@ -990,68 +990,82 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
             await startEngine();
         }
 
-        async function startEngine() {
+        async function startEngine(recreateClient = false) {
             dbState = 'loading';
             updateStatusBadge();
             
             if (supabaseUrl && supabaseKey) {
                 try {
-                    client = supabase.createClient(supabaseUrl, supabaseKey);
-                    
-                    // Bind auth state listener
-                    if (authSubscription) {
-                        authSubscription.unsubscribe();
-                        authSubscription = null;
-                    }
-                    const { data: { subscription } } = client.auth.onAuthStateChange(async (event, session) => {
-                        if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
-                            await startEngine();
+                    if (!client || recreateClient) {
+                        client = supabase.createClient(supabaseUrl, supabaseKey);
+                        
+                        // Bind auth state listener
+                        if (authSubscription) {
+                            authSubscription.unsubscribe();
+                            authSubscription = null;
                         }
-                    });
-                    authSubscription = subscription;
-
-                    // Verify authentication state first
-                    const isUserLoggedIn = await checkAuthState();
-                    if (!isUserLoggedIn) {
-                        dbState = 'connected';
-                        updateStatusBadge();
-                        return; // Stop execution until user logs in
+                        const { data: { subscription } } = client.auth.onAuthStateChange(async (event, session) => {
+                            if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
+                                await refreshSessionAndData();
+                            }
+                        });
+                        authSubscription = subscription;
                     }
                     
-                    // Test if we can read from leads
-                    const { data, error } = await client.from('leads').select('id', { count: 'exact', head: true });
-                    
-                    if (error) {
-                        // Check if it's the "table not found" error code (PGRST205)
-                        if (error.code === 'PGRST205') {
-                            dbState = 'needs_tables';
-                            showDbWarningBanner(true);
-                            switchTab('db-setup');
-                        } else {
-                            throw error;
-                        }
-                    } else {
-                        dbState = 'connected';
-                        showDbWarningBanner(false);
-                        await fetchAllFromSupabase();
-                        // If we were on db-setup, go back to dashboard
-                        const activeTab = document.querySelector('.tab-content:not(.hidden)');
-                        if (!activeTab || activeTab.id === 'tab-db-setup') {
-                            switchTab('pulpit');
-                        }
-                    }
+                    await refreshSessionAndData();
                 } catch (e) {
                     console.error("Supabase connection error:", e);
                     dbState = 'connection_error';
                     showDbWarningBanner(false);
                     client = null;
                     await checkAuthState();
+                    updateStatusBadge();
                 }
             } else {
                 dbState = 'connection_error';
                 showDbWarningBanner(false);
                 client = null;
                 await checkAuthState();
+                updateStatusBadge();
+            }
+        }
+
+        async function refreshSessionAndData() {
+            try {
+                // Verify authentication state first
+                const isUserLoggedIn = await checkAuthState();
+                if (!isUserLoggedIn) {
+                    dbState = 'connected';
+                    updateStatusBadge();
+                    return; // Stop execution until user logs in
+                }
+                
+                // Test if we can read from leads
+                const { data, error } = await client.from('leads').select('id', { count: 'exact', head: true });
+                
+                if (error) {
+                    // Check if it's the "table not found" error code (PGRST205)
+                    if (error.code === 'PGRST205') {
+                        dbState = 'needs_tables';
+                        showDbWarningBanner(true);
+                        switchTab('db-setup');
+                    } else {
+                        throw error;
+                    }
+                } else {
+                    dbState = 'connected';
+                    showDbWarningBanner(false);
+                    await fetchAllFromSupabase();
+                    // If we were on db-setup, go back to dashboard
+                    const activeTab = document.querySelector('.tab-content:not(.hidden)');
+                    if (!activeTab || activeTab.id === 'tab-db-setup') {
+                        switchTab('pulpit');
+                    }
+                }
+            } catch (e) {
+                console.error("Failed to refresh session or fetch data:", e);
+                dbState = 'connection_error';
+                showDbWarningBanner(false);
             }
 
             updateStatusBadge();
@@ -1605,7 +1619,7 @@ CREATE POLICY "Allow public insert" ON public.activities FOR INSERT WITH CHECK (
             setTimeout(async () => {
                 closeSettingsModal();
                 document.getElementById('settings-connection-status').textContent = "";
-                await startEngine();
+                await startEngine(true);
             }, 800);
         }
         function copySqlSchema() {
