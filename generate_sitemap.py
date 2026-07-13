@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 
-base_dir = "/Users/jakubswieton/Desktop/martin growth"
+base_dir = os.path.dirname(os.path.abspath(__file__))
 domain = "https://firstpartners.pl"
 
 static_pages = {
