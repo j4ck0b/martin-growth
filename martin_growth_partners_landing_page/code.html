@@ -144,7 +144,10 @@
 <!-- Hero Section -->
 <header class="relative h-screen flex items-center pt-24 overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover grayscale opacity-20" data-alt="A high-contrast black and white architectural photograph capturing the sharp, structural lines of a modern skyscraper's facade against a clear sky. The lighting is dramatic, emphasizing textures and the precise engineering of the building. The image reflects a sense of permanence, structural integrity, and professional sophistication, aligning with a premium investment firm aesthetic. Deep shadows and bright highlights create a powerful editorial look." src="../assets/hero-building.jpg"/>
+<picture class="w-full h-full block">
+  <source srcset="../assets/hero-building.webp" type="image/webp">
+  <img class="w-full h-full object-cover grayscale opacity-20" alt="A high-contrast black and white architectural photograph capturing the sharp, structural lines of a modern skyscraper's facade against a clear sky." src="../assets/hero-building.jpg" loading="eager" width="1920" height="1080"/>
+</picture>
 </div>
 <div class="relative z-10 px-margin-desktop max-w-container-max mx-auto grid grid-cols-12 gap-gutter items-center">
 <div class="col-span-12 lg:col-span-8 fade-in">
@@ -318,7 +321,10 @@
 <section class="py-stack-xl px-margin-desktop max-w-container-max mx-auto fade-in">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
 <div class="lg:col-span-5">
-<img class="w-full aspect-[4/5] object-cover grayscale" data-alt="A sophisticated black and white portrait of a professional man, Jacob Martin, in a dark tailored suit. He has a serious, direct gaze that conveys authority and intellectual rigor. The lighting is low-key, characteristic of high-end editorial portraits, with deep shadows and sharp highlights. The setting is a minimalist, slightly out-of-focus executive office with subtle textures of stone and dark wood. The overall mood is one of discretion and long-term operational excellence." src="../assets/jacob-martin.jpg"/>
+<picture class="w-full aspect-[4/5] block">
+  <source srcset="../assets/jacob-martin.webp" type="image/webp">
+  <img class="w-full h-full object-cover grayscale" alt="A sophisticated black and white portrait of a professional man, Jacob Martin, in a dark tailored suit." src="../assets/jacob-martin.jpg" loading="lazy" width="600" height="750"/>
+</picture>
 </div>
 <div class="lg:col-span-7 lg:pl-stack-lg">
 <span class="font-label-caps text-label-caps text-brand-gold mb-stack-md block">FOUNDER</span>

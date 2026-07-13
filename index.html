@@ -41,22 +41,44 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Organization", "LocalBusiness"],
+      "@type": "Organization",
       "@id": "https://firstpartners.pl/#organization",
       "name": "First Partners",
-      "description": "Boutique operational consulting firm specializing in scaling premium service businesses and implementing robust marketing infrastructure.",
+      "description": "Butikowa firma doradztwa operacyjnego specjalizująca się w skalowaniu biznesów usługowych premium oraz budowaniu infrastruktury marketingowej.",
       "url": "https://firstpartners.pl",
-      "email": "ceo@firstpartners.pl",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Warszawa",
-        "addressCountry": "PL"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://firstpartners.pl/favicon.png",
+        "width": "512",
+        "height": "512"
       },
-      "areaServed": ["PL", "EU"],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+48-797-786-024",
+          "contactType": "customer service",
+          "email": "ceo@firstpartners.pl",
+          "availableLanguage": ["pl", "en"]
+        }
+      ],
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Warszawa",
+          "addressCountry": "PL"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "London",
+          "addressCountry": "GB"
+        }
+      ],
+      "areaServed": ["PL", "GB", "EU"],
       "priceRange": "$$$",
       "knowsAbout": ["operational growth", "marketing strategy", "CRM systems", "business scaling", "automation", "consulting"],
       "sameAs": [
-        "https://jacobtmartinmoore.com"
+        "https://www.linkedin.com/company/firstpartners",
+        "https://x.com/firstpartners"
       ]
     },
     {
@@ -64,7 +86,7 @@
       "@id": "https://firstpartners.pl/#website",
       "url": "https://firstpartners.pl",
       "name": "First Partners — Partner operacyjny wzrostu dla firm",
-      "description": "Boutique operational consulting and business scaling for premium service companies.",
+      "description": "Butikowe doradztwo operacyjne i skalowanie biznesu dla firm usługowych premium.",
       "inLanguage": "pl",
       "publisher": { "@id": "https://firstpartners.pl/#organization" }
     }
@@ -248,6 +270,7 @@
 <a class="font-label-caps text-label-caps text-on-surface hover:text-brand-gold transition-colors pb-1 nav-link" href="#jak-dzialamy">JAK DZIAŁAMY</a>
 <a class="font-label-caps text-label-caps text-on-surface hover:text-brand-gold transition-colors pb-1 nav-link" href="#wspolpraca">WSPÓŁPRACA</a>
 <a class="font-label-caps text-label-caps text-on-surface hover:text-brand-gold transition-colors pb-1 nav-link" href="#kontakt">KONTAKT</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-brand-gold transition-colors pb-1 nav-link" href="/blog">BLOG</a>
 </div>
 <div class="hidden md:block">
 <a href="#kontakt" class="bg-brand-forest text-on-primary px-6 py-3 font-label-caps text-[11px] tracking-widest hover:bg-[#1A1A18] transition-colors duration-300 inline-block">
@@ -286,6 +309,10 @@
 <a class="font-serif text-3xl text-primary hover:text-brand-gold transition-colors flex items-baseline gap-4 group" href="#kontakt">
 <span class="font-sans text-[10px] tracking-widest text-brand-gold">04</span>
 <span class="border-b border-transparent group-hover:border-brand-gold/60 pb-1 transition-all duration-300">KONTAKT</span>
+</a>
+<a class="font-serif text-3xl text-primary hover:text-brand-gold transition-colors flex items-baseline gap-4 group" href="/blog">
+<span class="font-sans text-[10px] tracking-widest text-brand-gold">05</span>
+<span class="border-b border-transparent group-hover:border-brand-gold/60 pb-1 transition-all duration-300">BLOG</span>
 </a>
 </nav>
 </div>
@@ -336,7 +363,10 @@ UMÓW ROZMOWĘ
       <div class="w-full aspect-[3/4] relative border-[0.5px] border-brand-forest/30 shadow-[0_10px_40px_rgba(28,58,42,0.06)] overflow-hidden bg-brand-warm-white">
         <!-- Image Area -->
         <div class="relative w-full h-full overflow-hidden">
-          <img class="w-full h-full object-cover grayscale contrast-125 brightness-95 group-hover:scale-105 transition-transform duration-700 ease-out" alt="Monochromatyczna fotografia nowoczesnej architektury biznesowej reprezentującej stabilność i precyzję" src="./assets/hero-building.jpg"/>
+          <picture class="w-full h-full block">
+            <source srcset="./assets/hero-building.webp" type="image/webp">
+            <img class="w-full h-full object-cover grayscale contrast-125 brightness-95 group-hover:scale-105 transition-transform duration-700 ease-out" alt="Monochromatyczna fotografia nowoczesnej architektury biznesowej reprezentującej stabilność i precyzję" src="./assets/hero-building.jpg" loading="eager" width="800" height="1067"/>
+          </picture>
           <!-- Stats Overlay Card -->
           <div class="absolute bottom-4 left-4 right-4 bg-brand-warm-white/95 backdrop-blur border-[0.5px] border-outline-variant/40 p-4 shadow-lg flex justify-between items-center transition-all duration-500 transform translate-y-2 group-hover:translate-y-0 opacity-90 group-hover:opacity-100">
             <div>
@@ -938,8 +968,22 @@ UMÓW ROZMOWĘ
 <a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="./regulamin.html">Regulamin</a>
 </div>
 <div class="space-y-2">
+<h5 class="font-label-caps text-label-caps mb-4">BRANŻE</h5>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/gabinety-stomatologiczne">Stomatologia Premium</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/gabinety-medycyny-estetycznej">Medycyna Estetyczna</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/kliniki-fizjoterapii">Kliniki Fizjoterapii</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/prywatne-przedszkola-szkoly">Przedszkola i Szkoły</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/kancelarie-prawne">Kancelarie Prawne</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/b2b">Usługi B2B</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/deweloperzy-boutique">Deweloperzy Boutique</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/butikowe-biura-nieruchomosci">Biura Nieruchomości</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/zarzadzanie-najmem-premium">Zarządzanie Najmem</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/kursy-online-high-ticket">Info-biznes / Kursy</a>
+</div>
+<div class="space-y-2">
 <h5 class="font-label-caps text-label-caps mb-4">PORTAL</h5>
 <a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/crm">Panel CRM</a>
+<a class="block text-on-surface-variant hover:text-brand-gold transition-colors font-body-md" href="/blog">Blog</a>
 </div>
 <div class="space-y-2">
 <h5 class="font-label-caps text-label-caps mb-4">SOCIAL</h5>
