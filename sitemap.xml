@@ -1,122 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://firstpartners.pl/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/growth-audit</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/growth-audit</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/growth-system</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/growth-system</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/partnerstwo</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/partnerstwo</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/warszawa</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/warszawa</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/gabinety-stomatologiczne</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/gabinety-stomatologiczne</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/gabinety-medycyny-estetycznej</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/gabinety-medycyny-estetycznej</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/kliniki-fizjoterapii</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/kliniki-fizjoterapii</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/prywatne-przedszkola-szkoly</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/prywatne-przedszkola-szkoly</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/kursy-online-high-ticket</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/kursy-online-high-ticket</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/kancelarie-prawne</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/kancelarie-prawne</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/b2b</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/b2b</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/deweloperzy-boutique</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/deweloperzy-boutique</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/butikowe-biura-nieruchomosci</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/butikowe-biura-nieruchomosci</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/zarzadzanie-najmem-premium</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/zarzadzanie-najmem-premium</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/crm</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>https://firstpartners.pl/polityka-prywatnosci</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/polityka-prywatnosci</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/regulamin</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/regulamin</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/blog</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/blog</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://firstpartners.pl/blog/crm-dla-firm-uslugowych-premium</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.firstpartners.pl/blog/crm-dla-firm-uslugowych-premium</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

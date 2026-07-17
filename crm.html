@@ -96,8 +96,10 @@
             background: #B8922A;
         }
     </style>
+    <meta name="robots" content="noindex, nofollow" />
 </head>
 <body class="bg-brand-warm-white text-primary font-body antialiased min-h-screen flex flex-col">
+    <h1 class="sr-only">Panel CRM | First Partners</h1>
 
     <!-- Top Navigation Bar -->
     <nav class="fixed top-0 left-0 w-full z-40 bg-brand-warm-white/98 border-b border-outline-variant/30">
@@ -156,7 +158,7 @@
         <section id="tab-pulpit" class="tab-content block">
             <div class="mb-8">
                 <span class="label-caps text-brand-gold text-[10px]">Statystyki operacyjne</span>
-                <h1 class="font-serif text-3xl md:text-4xl font-medium text-primary mt-1">Pulpit menedżerski</h1>
+                <h2 class="font-serif text-3xl md:text-4xl font-medium text-primary mt-1">Pulpit menedżerski</h2>
             </div>
 
             <!-- Stats Grid -->
@@ -243,7 +245,7 @@
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
                 <div>
                     <span class="label-caps text-brand-gold text-[10px]">Zarządzanie lejkiem B2B</span>
-                    <h1 class="font-serif text-3xl md:text-4xl font-medium text-primary mt-1">Leady i Klienci</h1>
+                    <h2 class="font-serif text-3xl md:text-4xl font-medium text-primary mt-1">Leady i Klienci</h2>
                 </div>
                 <button onclick="openLeadModal()" class="bg-brand-forest text-on-primary label-caps text-[11px] px-6 py-3 tracking-widest hover:bg-[#1A1A18] transition-colors rounded-none cursor-pointer">
                     Dodaj leada / klienta
@@ -317,7 +319,7 @@
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
                 <div>
                     <span class="label-caps text-brand-gold text-[10px]">Bieżące operacje i delegacja</span>
-                    <h1 class="font-serif text-3xl md:text-4xl font-medium text-primary mt-1">Zadania i Przypisania</h1>
+                    <h2 class="font-serif text-3xl md:text-4xl font-medium text-primary mt-1">Zadania i Przypisania</h2>
                 </div>
                 <div class="flex items-center gap-3">
                     <select id="task-filter-assignee" onchange="renderTasks()" class="border border-outline/30 px-3 py-2 text-xs rounded-none bg-transparent focus:outline-none focus:border-brand-gold">
@@ -376,7 +378,7 @@
         <section id="tab-zespol" class="tab-content hidden">
             <div class="mb-8">
                 <span class="label-caps text-brand-gold text-[10px]">Struktura organizacyjna</span>
-                <h1 class="font-serif text-3xl md:text-4xl font-medium text-primary mt-1">Zespół operacyjny</h1>
+                <h2 class="font-serif text-3xl md:text-4xl font-medium text-primary mt-1">Zespół operacyjny</h2>
             </div>
 
             <!-- Team Members Grid -->
@@ -477,7 +479,7 @@
         <section id="tab-db-setup" class="tab-content hidden">
             <div class="max-w-2xl mx-auto my-12 border-[0.5px] border-outline-variant p-8 bg-brand-warm-white text-center">
                 <span class="material-symbols-outlined text-red-600 text-5xl mb-4">database_alert</span>
-                <h1 class="font-serif text-3xl font-medium text-primary mb-3">Wymagana konfiguracja bazy danych</h1>
+                <h2 class="font-serif text-3xl font-medium text-primary mb-3">Wymagana konfiguracja bazy danych</h2>
                 <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
                     Połączenie z Supabase zostało ustanowione, ale w projekcie brakuje wymaganych tabel (<code class="bg-surface-container-low px-1.5 py-0.5 rounded text-red-700">leads</code>, <code class="bg-surface-container-low px-1.5 py-0.5 rounded text-red-700">tasks</code>, <code class="bg-surface-container-low px-1.5 py-0.5 rounded text-red-700">activities</code>).
                     Uruchom poniższy skrypt SQL w zakładce <strong>SQL Editor</strong> w panelu Supabase, aby utworzyć tabele i nadać uprawnienia.

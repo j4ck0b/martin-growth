@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
-domain = "https://firstpartners.pl"
+domain = "https://www.firstpartners.pl"
 
 static_pages = {
     "": {"file": "index.html", "priority": "1.0", "changefreq": "weekly"},
@@ -20,7 +20,6 @@ static_pages = {
     "deweloperzy-boutique": {"file": "deweloperzy-boutique.html", "priority": "0.7", "changefreq": "monthly"},
     "butikowe-biura-nieruchomosci": {"file": "butikowe-biura-nieruchomosci.html", "priority": "0.7", "changefreq": "monthly"},
     "zarzadzanie-najmem-premium": {"file": "zarzadzanie-najmem-premium.html", "priority": "0.7", "changefreq": "monthly"},
-    "crm": {"file": "crm.html", "priority": "0.1", "changefreq": "monthly"},
     "polityka-prywatnosci": {"file": "polityka-prywatnosci.html", "priority": "0.3", "changefreq": "monthly"},
     "regulamin": {"file": "regulamin.html", "priority": "0.3", "changefreq": "monthly"},
     "blog": {"file": "blog.html", "priority": "0.8", "changefreq": "weekly"}

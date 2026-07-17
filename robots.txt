@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /crm
 
-Sitemap: https://firstpartners.pl/sitemap.xml
+Sitemap: https://www.firstpartners.pl/sitemap.xml

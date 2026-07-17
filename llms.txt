@@ -1,0 +1,33 @@
+# First Partners — Doradztwo Operacyjne i Skalowanie Biznesu Premium
+
+First Partners to butikowa firma doradztwa operacyjnego specjalizująca się w skalowaniu biznesów usługowych klasy premium oraz budowaniu zrównoważonej infrastruktury marketingowo-sprzedażowej. Łączymy procesy biznesowe z nowoczesnymi technologiami CRM i automatyzacjami.
+
+## Primary Services
+
+- **Growth Audit** (https://www.firstpartners.pl/growth-audit): Szczegółowy audyt operacyjny i marketingowy. Diagnozuje wąskie gardła w lejku sprzedaży, optymalizuje procesy obsługi klienta i identyfikuje obszary o niskiej rentowności.
+- **Growth System** (https://www.firstpartners.pl/growth-system): Kompleksowe budowanie infrastruktury marketingowo-sprzedażowej. Wdrażanie systemów CRM (np. Supabase/custom integration), automatyzacja follow-upów i procesów oraz optymalizacja kampanii reklamowych Google/Meta Ads.
+- **Partnerstwo Operacyjne** (https://www.firstpartners.pl/partnerstwo): Program partnerski oparty na modelu rozliczeń prowizyjnych (Success Fee, Revenue Share lub udziały w kapitale) dla zakwalifikowanych firm usługowych premium. Brak stałych opłat abonamentowych.
+
+## Target Industries
+
+Dedykowane rozwiązania operacyjne i wzrostowe w podziale na branże:
+- **Stomatologia Premium** (https://www.firstpartners.pl/gabinety-stomatologiczne): Skalowanie klinik stomatologicznych (implanty, ortodoncja, licówki) poprzez automatyzację i spójną komunikację marki premium.
+- **Medycyna Estetyczna** (https://www.firstpartners.pl/gabinety-medycyny-estetycznej): Skalowanie gabinetów poprzez pozyskiwanie pacjentów na wysokomarżowe zabiegi.
+- **Kliniki Fizjoterapii** (https://www.firstpartners.pl/kliniki-fizjoterapii): Optymalizacja procesów rezerwacyjnych i zwiększanie wartości życiowej pacjenta (LTV).
+- **Prywatne Przedszkola i Szkoły** (https://www.firstpartners.pl/prywatne-przedszkola-szkoly): Rekrutacja uczniów premium i budowanie list oczekujących.
+- **Kancelarie Prawne** (https://www.firstpartners.pl/kancelarie-prawne): Pozyskiwanie klientów i wdrożenie CRM dla kancelarii prawnych i podatkowych.
+- **Usługi B2B** (https://www.firstpartners.pl/b2b): Automatyzacja lead generation i procesów handlowych dla firm usługowych.
+- **Deweloperzy Boutique** (https://www.firstpartners.pl/deweloperzy-boutique): Sprzedaż mieszkań premium i kampanie wizerunkowe inwestycji deweloperskich.
+- **Butikowe Biura Nieruchomosci** (https://www.firstpartners.pl/butikowe-biura-nieruchomosci): Skalowanie agencji i pozycjonowanie SEO ofert premium.
+- **Zarządzanie Najmem Premium** (https://www.firstpartners.pl/zarzadzanie-najmem-premium): Optymalizacja operacyjna dla zarządców apartamentów i rezydencji premium.
+- **Info-biznes / Kursy High-Ticket** (https://www.firstpartners.pl/kursy-online-high-ticket): Zautomatyzowane lejki sprzedażowe i CRM dla produktów edukacyjnych premium powyżej 3 000 PLN.
+
+## Local Focus
+
+- **Doradztwo Biznesowe Warszawa** (https://www.firstpartners.pl/warszawa): Dedykowane usługi restrukturyzacji, doradztwa i optymalizacji procesów dla firm na rynku warszawskim.
+
+## Resources
+
+- **Blog i Baza Wiedzy** (https://www.firstpartners.pl/blog): Praktyczne analizy, studia przypadków i techniczne przewodniki po skalowaniu firm usługowych premium.
+- **Polityka Prywatności** (https://www.firstpartners.pl/polityka-prywatnosci)
+- **Regulamin Serwisu** (https://www.firstpartners.pl/regulamin)
